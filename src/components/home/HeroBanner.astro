@@ -1,0 +1,159 @@
+---
+import { SITE } from "@config/site";
+---
+
+<section
+  class="relative w-full flex justify-center overflow-hidden px-5 sm:px-6 pt-10 pb-12 sm:min-h-screen sm:items-center sm:pt-0 sm:pb-0"
+  style="background:linear-gradient(135deg,#030A11 0%,#07121C 50%,#0D1F30 100%);"
+>
+  <div
+    class="absolute inset-0 opacity-[0.035] bg-[url('/assets/pattern/islamic.svg')] bg-repeat bg-[length:110px]"
+  >
+  </div>
+  <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40"></div>
+  <div
+    class="absolute top-1/3 -left-40 w-[500px] h-[500px] rounded-full opacity-[0.07] blur-3xl pointer-events-none"
+    style="background:radial-gradient(circle,#2E567C,transparent);"
+  >
+  </div>
+  <div
+    class="absolute bottom-1/4 -right-40 w-96 h-96 rounded-full opacity-[0.05] blur-3xl pointer-events-none"
+    style="background:radial-gradient(circle,#1E3A57,transparent);"
+  >
+  </div>
+
+  <div
+    class="relative z-10 text-center max-w-4xl mx-auto w-full"
+    id="hero-content"
+    style="opacity:1;"
+  >
+    <p
+      class="font-arabic text-xl sm:text-3xl mb-3 sm:mb-5 leading-relaxed"
+      style="color:rgba(155,175,196,0.65);"
+    >
+      بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم
+    </p>
+
+    <div
+      class="inline-flex items-center gap-2 text-[10px] sm:text-[11px] font-semibold px-3 sm:px-4 py-1.5 rounded-full mb-4 sm:mb-7 tracking-[0.15em] uppercase"
+      style="background:rgba(155,175,196,0.06);border:1px solid rgba(155,175,196,0.12);color:rgba(155,175,196,0.80);"
+    >
+      <span
+        class="w-1.5 h-1.5 rounded-full animate-pulse"
+        style="background:rgba(155,175,196,0.60);"></span>
+      PMBM Bersama Kanwil Banten — TP {SITE.tahunPelajaran}
+    </div>
+
+    <h1
+      class="text-3xl sm:text-5xl md:text-[3.5rem] font-bold text-white leading-[1.15] mb-3 sm:mb-5"
+    >
+      {SITE.name}
+    </h1>
+
+    <p
+      class="text-sm sm:text-lg mb-1 leading-relaxed max-w-2xl mx-auto"
+      style="color:rgba(155,175,196,0.55);"
+    >
+      {SITE.tagline.id}
+    </p>
+    <p class="text-xs sm:text-sm italic mb-6 sm:mb-11" style="color:rgba(155,175,196,0.28);">
+      {SITE.tagline.en}
+    </p>
+
+    <div class="flex justify-center gap-2 sm:gap-4 mb-6 sm:mb-11">
+      {
+        [
+          { key: "hari", label: "Hari" },
+          { key: "jam", label: "Jam" },
+          { key: "menit", label: "Menit" },
+          { key: "detik", label: "Detik" },
+        ].map(({ key, label }) => (
+          <div
+            class="rounded-xl sm:rounded-2xl px-3 sm:px-6 py-2.5 sm:py-3 flex-1 sm:flex-none sm:min-w-[84px] text-center"
+            style="background:rgba(155,175,196,0.05);border:1px solid rgba(155,175,196,0.09);"
+          >
+            <span
+              class={`countdown-${key} block text-xl sm:text-3xl font-bold text-white tabular-nums`}
+            >
+              00
+            </span>
+            <span
+              class="block text-[9px] sm:text-[10px] uppercase tracking-widest mt-0.5"
+              style="color:rgba(155,175,196,0.40);"
+            >
+              {label}
+            </span>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center mb-6 sm:mb-10">
+      <a
+        href={SITE.registrationUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-primary text-sm sm:text-[15px] px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
+      >
+        Daftar Sekarang
+      </a>
+      <a
+        href="/jadwal"
+        class="btn-outline-white text-sm sm:text-[15px] px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
+      >
+        Lihat Jadwal
+      </a>
+    </div>
+
+    <div
+      class="flex justify-center gap-3 sm:gap-5 flex-wrap text-[10px] sm:text-[11px] font-medium"
+      style="color:rgba(155,175,196,0.20);"
+    >
+      <span>NPSN {SITE.npsn}</span>
+      <span style="color:rgba(155,175,196,0.10);">·</span>
+      <span>Akreditasi {SITE.akreditasi}</span>
+      <span style="color:rgba(155,175,196,0.10);">·</span>
+      <span>Zona Integritas WBK</span>
+    </div>
+  </div>
+
+  <div
+    class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce opacity-20 hidden sm:block"
+  >
+    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"
+      ></path>
+    </svg>
+  </div>
+</section>
+
+<script is:inline define:vars={{ deadline: SITE.registrationDeadline }}>
+  function pad(n) {
+    return String(n).padStart(2, "0");
+  }
+  function tick() {
+    const diff = Math.max(0, new Date(deadline).getTime() - Date.now());
+    const d = Math.floor(diff / 86400000);
+    const h = Math.floor((diff % 86400000) / 3600000);
+    const m = Math.floor((diff % 3600000) / 60000);
+    const s = Math.floor((diff % 60000) / 1000);
+    const q = (sel) => document.querySelector(sel);
+    if (q(".countdown-hari")) q(".countdown-hari").textContent = pad(d);
+    if (q(".countdown-jam")) q(".countdown-jam").textContent = pad(h);
+    if (q(".countdown-menit")) q(".countdown-menit").textContent = pad(m);
+    if (q(".countdown-detik")) q(".countdown-detik").textContent = pad(s);
+  }
+  tick();
+  setInterval(tick, 1000);
+</script>
+
+<script>
+  import { gsap } from "gsap";
+  const els = document.querySelectorAll("#hero-content > *");
+  els.forEach((el) => ((el as HTMLElement).style.opacity = "1"));
+  gsap.fromTo(
+    "#hero-content > *",
+    { y: 22, opacity: 0 },
+    { y: 0, opacity: 1, stagger: 0.09, duration: 0.7, ease: "power3.out", delay: 0.15 }
+  );
+</script>

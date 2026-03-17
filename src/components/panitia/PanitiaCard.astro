@@ -1,0 +1,91 @@
+---
+interface Props {
+  nama: string;
+  foto: string;
+  jabatan: string;
+  kontak?: { wa?: string; email?: string };
+  deskripsi?: string;
+}
+const { nama, foto, jabatan, kontak, deskripsi } = Astro.props;
+---
+
+<div
+  class="rounded-2xl overflow-hidden group transition-all duration-300"
+  style="background:#0D1F30;border:1px solid rgba(155,175,196,0.09);box-shadow:0 2px 20px rgba(0,0,0,0.28);"
+  onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 40px rgba(0,0,0,0.44)';this.style.borderColor='rgba(155,175,196,0.18)';"
+  onmouseout="this.style.transform='';this.style.boxShadow='0 2px 20px rgba(0,0,0,0.28)';this.style.borderColor='rgba(155,175,196,0.09)';"
+>
+  <div
+    class="relative h-52 overflow-hidden"
+    style="background:linear-gradient(135deg,#0D1F30,#1E3A57);"
+  >
+    {
+      foto ? (
+        <img
+          src={foto}
+          alt={nama}
+          class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+          loading="lazy"
+        />
+      ) : (
+        <div
+          class="w-full h-full flex items-center justify-center text-6xl font-bold select-none"
+          style="color:rgba(155,175,196,0.15);"
+        >
+          {nama.charAt(0)}
+        </div>
+      )
+    }
+    <div
+      class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+    >
+    </div>
+  </div>
+
+  <div class="p-5">
+    <span
+      class="inline-block text-xs font-semibold px-3 py-1 rounded-full mb-2"
+      style="background:rgba(155,175,196,0.10);color:#9AAFC4;border:1px solid rgba(155,175,196,0.14);"
+    >
+      {jabatan}
+    </span>
+    <h3 class="font-bold text-[15px] leading-snug mt-1" style="color:#E8EDF3;">{nama}</h3>
+    {
+      deskripsi && (
+        <p class="text-xs leading-relaxed mt-2" style="color:#6F8EAC;">
+          {deskripsi}
+        </p>
+      )
+    }
+    {
+      (kontak?.wa || kontak?.email) && (
+        <div class="flex gap-2 mt-4">
+          {kontak?.wa && (
+            <a
+              href={`https://wa.me/${kontak.wa}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-xs font-medium px-3 py-1.5 rounded-full transition-colors"
+              style="background:rgba(155,175,196,0.08);color:#9AAFC4;border:1px solid rgba(155,175,196,0.12);"
+              onmouseover="this.style.background='rgba(155,175,196,0.15)';this.style.color='#C5D0DC';"
+              onmouseout="this.style.background='rgba(155,175,196,0.08)';this.style.color='#9AAFC4';"
+            >
+              WhatsApp
+            </a>
+          )}
+          {kontak?.email && (
+            <a
+              href={`mailto:${kontak.email}`}
+              class="text-xs font-medium px-3 py-1.5 rounded-full transition-colors"
+              style="background:rgba(155,175,196,0.08);color:#9AAFC4;border:1px solid rgba(155,175,196,0.12);"
+              onmouseover="this.style.background='rgba(155,175,196,0.15)';this.style.color='#C5D0DC';"
+              onmouseout="this.style.background='rgba(155,175,196,0.08)';this.style.color='#9AAFC4';"
+            >
+              Email
+            </a>
+          )}
+        </div>
+      )
+    }
+  </div>
+</div>

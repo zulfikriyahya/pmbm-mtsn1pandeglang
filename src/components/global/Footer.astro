@@ -1,0 +1,161 @@
+---
+import { SITE } from "@config/site";
+
+const links = [
+  { href: "/", label: "Beranda" },
+  { href: "/panitia", label: "Panitia" },
+  { href: "/personil", label: "Personil" },
+  { href: "/jadwal", label: "Jadwal & Alur" },
+  { href: "/faq", label: "FAQ" },
+  { href: "/kontak", label: "Kontak" },
+];
+---
+
+<footer style="background:#030A11;">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-14 pb-8">
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 pb-10"
+      style="border-bottom:1px solid rgba(155,175,196,0.07);"
+    >
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-3 mb-5">
+          <img src="/favicon.png" alt="Logo" class="w-10 h-10" />
+          <div>
+            <p class="font-bold text-white text-sm leading-tight">{SITE.shortName}</p>
+            <p class="text-[11px] mt-0.5" style="color:rgba(155,175,196,0.45);">
+              PMBM Bersama {SITE.tahunPelajaran}
+            </p>
+          </div>
+        </div>
+        <p class="text-sm leading-relaxed mb-5" style="color:rgba(155,175,196,0.60);">
+          {SITE.address}
+        </p>
+        <div class="flex gap-2 flex-wrap">
+          {
+            [
+              { href: SITE.instagram, label: "Instagram" },
+              { href: SITE.youtubeChannel, label: "YouTube" },
+              { href: SITE.whatsappPTSP, label: "WhatsApp" },
+            ].map((s) => (
+              <a
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-xs font-medium px-3 py-1.5 rounded-full transition-all"
+                style="border:1px solid rgba(155,175,196,0.14);color:rgba(155,175,196,0.65);"
+                onmouseover="this.style.borderColor='rgba(155,175,196,0.38)';this.style.color='rgba(155,175,196,0.95)';"
+                onmouseout="this.style.borderColor='rgba(155,175,196,0.14)';this.style.color='rgba(155,175,196,0.65)';"
+              >
+                {s.label}
+              </a>
+            ))
+          }
+        </div>
+      </div>
+
+      <!-- Nav -->
+      <div>
+        <p
+          class="text-[11px] font-bold uppercase tracking-[0.18em] mb-5"
+          style="color:rgba(155,175,196,0.50);"
+        >
+          Navigasi
+        </p>
+        <ul class="space-y-3">
+          {
+            links.map((l) => (
+              <li>
+                <a
+                  href={l.href}
+                  class="text-sm transition-colors"
+                  style="color:rgba(155,175,196,0.65);"
+                  onmouseover="this.style.color='rgba(155,175,196,0.95)'"
+                  onmouseout="this.style.color='rgba(155,175,196,0.65)'"
+                >
+                  {l.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <!-- Kontak -->
+      <div>
+        <p
+          class="text-[11px] font-bold uppercase tracking-[0.18em] mb-5"
+          style="color:rgba(155,175,196,0.25);"
+        >
+          Kontak
+        </p>
+        <ul class="space-y-3 text-sm">
+          {
+            [
+              { href: `tel:${SITE.phone}`, text: SITE.phone },
+              { href: `mailto:${SITE.email}`, text: SITE.email },
+              { href: SITE.mainUrl, text: "mtsn1pandeglang.sch.id", external: true },
+            ].map((c) => (
+              <li>
+                <a
+                  href={c.href}
+                  target={c.external ? "_blank" : undefined}
+                  rel={c.external ? "noopener noreferrer" : undefined}
+                  class="transition-colors"
+                  style="color:rgba(155,175,196,0.35);"
+                  onmouseover="this.style.color='rgba(155,175,196,0.80)'"
+                  onmouseout="this.style.color='rgba(155,175,196,0.35)'"
+                >
+                  {c.text}
+                </a>
+              </li>
+            ))
+          }
+          <li class="pt-2">
+            <a
+              href={SITE.registrationUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-secondary text-xs py-2.5 px-5"
+            >
+              Daftar Sekarang
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="pt-6 flex flex-col items-center sm:flex-row sm:justify-between gap-2 text-xs text-center"
+      style="color:rgba(155,175,196,0.40);"
+    >
+      <p>
+        © <span id="footer-year"></span>
+        <a
+          href="https://mtsn1pandeglang.sch.id/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color:rgba(155,175,196,0.40);transition:color 0.2s;"
+          onmouseover="this.style.color='rgba(155,175,196,0.80)'"
+          onmouseout="this.style.color='rgba(155,175,196,0.40)'">{SITE.name}</a
+        >. Hak cipta dilindungi.
+      </p>
+      <p>
+        Dikelola oleh
+        <a
+          href="https://github.com/zulfikriyahya"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color:rgba(155,175,196,0.40);transition:color 0.2s;"
+          onmouseover="this.style.color='rgba(155,175,196,0.80)'"
+          onmouseout="this.style.color='rgba(155,175,196,0.40)'">Tim PUSDATIN</a
+        >
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const el = document.getElementById("footer-year");
+  if (el) el.textContent = String(new Date().getFullYear());
+</script>

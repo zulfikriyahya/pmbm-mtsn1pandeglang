@@ -1,0 +1,24 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import KontakForm from "@components/kontak/KontakForm.tsx";
+import KontakInfo from "@components/kontak/KontakInfo.astro";
+---
+
+<BaseLayout
+  title="Kontak"
+  description="Hubungi panitia PMBM MTsN 1 Pandeglang untuk informasi lebih lanjut"
+>
+  <section style="background:#07121C;padding:4rem 0;">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <span class="eyebrow justify-center">Hubungi Kami</span>
+        <h1 class="section-title mt-3">Kontak Panitia</h1>
+        <p class="section-sub">Kami siap membantu pertanyaan Anda</p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <KontakForm client:only="react" />
+        <KontakInfo />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

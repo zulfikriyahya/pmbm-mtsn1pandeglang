@@ -1,0 +1,129 @@
+---
+import { SITE } from "@config/site";
+
+const links = [
+  { href: "/", label: "Beranda" },
+  { href: "/panitia", label: "Panitia" },
+  { href: "/personil", label: "Personil" },
+  { href: "/jadwal", label: "Jadwal & Alur" },
+  { href: "/faq", label: "FAQ" },
+  { href: "/kontak", label: "Kontak" },
+];
+const cur = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-50">
+  <div class="glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+      <a href="/" class="flex items-center gap-3 flex-shrink-0 group">
+        <img
+          src="/favicon.png"
+          alt="Logo"
+          class="w-9 h-9 group-hover:scale-105 transition-transform"
+        />
+        <div class="hidden sm:block leading-tight">
+          <span class="font-bold text-white text-sm block">MTsN 1 Pandeglang</span>
+          <span class="text-[10px] font-medium tracking-wide" style="color:rgba(155,175,196,0.7);">
+            PMBM Bersama {SITE.tahunPelajaran}
+          </span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-0.5">
+        {
+          links.map((l) => (
+            <a
+              href={l.href}
+              class:list={[
+                "relative px-3.5 py-2 rounded-lg text-sm font-medium transition-all duration-200",
+                cur === l.href
+                  ? "text-white bg-white/10"
+                  : "text-white/50 hover:text-white hover:bg-white/8",
+              ]}
+            >
+              {cur === l.href && (
+                <span
+                  class="absolute bottom-0.5 left-1/2 -translate-x-1/2 w-4 h-0.5 rounded-full"
+                  style="background:rgba(155,175,196,0.6);"
+                />
+              )}
+              {l.label}
+            </a>
+          ))
+        }
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <a
+          href={SITE.registrationUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hidden sm:inline-flex btn-secondary text-sm py-2 px-5 no-print"
+        >
+          Daftar Sekarang
+        </a>
+        <button
+          id="mob-btn"
+          aria-label="Menu"
+          class="lg:hidden w-9 h-9 flex flex-col items-center justify-center gap-1.5 rounded-lg hover:bg-white/10 transition-colors"
+        >
+          <span id="b1" class="block w-5 h-0.5 bg-white/60 rounded transition-all origin-center"
+          ></span>
+          <span id="b2" class="block w-5 h-0.5 bg-white/60 rounded transition-all"></span>
+          <span id="b3" class="block w-5 h-0.5 bg-white/60 rounded transition-all origin-center"
+          ></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div
+    id="mob-menu"
+    class="hidden lg:hidden border-b border-white/5"
+    style="background:rgba(5,13,22,0.97);backdrop-filter:blur(24px);"
+  >
+    <nav class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1">
+      {
+        links.map((l) => (
+          <a
+            href={l.href}
+            class:list={[
+              "px-4 py-3 rounded-xl text-sm font-medium transition-colors",
+              cur === l.href
+                ? "text-white bg-white/10"
+                : "text-white/50 hover:text-white hover:bg-white/5",
+            ]}
+          >
+            {l.label}
+          </a>
+        ))
+      }
+      <a
+        href={SITE.registrationUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-secondary text-sm mt-3"
+      >
+        Daftar Sekarang
+      </a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById("mob-btn");
+  const menu = document.getElementById("mob-menu");
+  const b1 = document.getElementById("b1");
+  const b2 = document.getElementById("b2");
+  const b3 = document.getElementById("b3");
+  let open = false;
+  btn?.addEventListener("click", () => {
+    open = !open;
+    menu?.classList.toggle("hidden", !open);
+    if (b1 && b2 && b3) {
+      b1.style.transform = open ? "translateY(6px) rotate(45deg)" : "";
+      b2.style.opacity = open ? "0" : "1";
+      b3.style.transform = open ? "translateY(-6px) rotate(-45deg)" : "";
+    }
+  });
+</script>

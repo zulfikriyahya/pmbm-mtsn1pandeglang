@@ -1,0 +1,42 @@
+export const COLORS = {
+  navy: "#0D1B2A",
+  navyDark: "#07121C",
+  navyMid: "#152D45",
+  navyLight: "#1E3A57",
+  navyAccent: "#2E567C",
+  navyMuted: "#9AAFC4",
+  gold: "#F5A623",
+  gradientMain: "linear-gradient(135deg,#0D1B2A,#1E3A57)",
+  gradientHero: "linear-gradient(135deg,#07121C,#0D1B2A 50%,#152D45)",
+  gradientLight: "linear-gradient(135deg,#1E3A57,#2E567C)",
+};
+
+export const SITE = {
+  name: "Madrasah Tsanawiyah Negeri 1 Pandeglang",
+  shortName: "MTsN 1 Pandeglang",
+  tagline: {
+    id: "Taat Beragama, Unggul dalam Berprestasi, dan Peduli terhadap Lingkungan",
+    en: "Devout, High-Achieving, and Environmentally Conscious",
+    ar: "مُتَدَيِّنٌ، مُتَفَوِّقٌ فِي الإِنْجَازِ، وَمُهْتَمٌّ بِالْبِيئَةِ",
+  },
+  motto: "Mandiri, Takwa, Peduli Lingkungan, Prestasi",
+  url: "https://pmbm.mtsn1pandeglang.sch.id",
+  mainUrl: "https://mtsn1pandeglang.sch.id",
+  registrationUrl: "https://pmbm-kanwilbanten.com/",
+  youtubeId: "VIDEO_ID_HERE",
+  youtubeChannel: "https://www.youtube.com/@mtsn1pandeglangofficial",
+  instagram: "https://www.instagram.com/mtsn1_pandeglang",
+  whatsappPTSP: "https://wa.me/62895351856267",
+  tahunPelajaran: "2026/2027",
+  registrationDeadline: "2026-04-27T16:00:00",
+  announcement:
+    "Pendaftaran PMBM MTsN 1 Pandeglang 2026/2027 dibuka 18 April — Daftar via pmbm-kanwilbanten.com",
+  address: "Jl. Raya Labuan Km. 5,7 Palurahan, Kaduhejo, Pandeglang, Banten 42253",
+  phone: "+62-8953-5185-6267",
+  whatsapp: "62895351856267",
+  email: "adm@mtsn1pandeglang.sch.id",
+  mapsEmbed: "https://www.google.com/maps/embed?pb=MAPS_EMBED_ID",
+  ogImage: "/assets/og/og-default.jpg",
+  akreditasi: "A (Unggul)",
+  npsn: "69788409",
+};

@@ -1,0 +1,104 @@
+---
+import { SITE } from "@config/site";
+
+const items = [
+  {
+    icon: "📍",
+    label: "Alamat",
+    value: SITE.address,
+    href: `https://maps.google.com/?q=${encodeURIComponent(SITE.address)}`,
+  },
+  { icon: "📞", label: "Telepon", value: SITE.phone, href: `tel:${SITE.phone}` },
+  { icon: "✉️", label: "Email", value: SITE.email, href: `mailto:${SITE.email}` },
+  { icon: "💬", label: "WhatsApp PTSP", value: "Chat via WhatsApp", href: SITE.whatsappPTSP },
+  { icon: "🌐", label: "Website Resmi", value: "mtsn1pandeglang.sch.id", href: SITE.mainUrl },
+];
+
+const mapsUrl =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.8!2d106.0693733!3d-6.3319948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e423a4dd12be59f%3A0x970e4cf0cc3a618!2sMTs%20Negeri%201%20Pandeglang!5e0!3m2!1sid!2sid!4v1";
+---
+
+<div class="space-y-5">
+  <div
+    class="rounded-2xl p-6"
+    style="background:#0D1F30;border:1px solid rgba(155,175,196,0.09);box-shadow:0 2px 20px rgba(0,0,0,0.32);"
+  >
+    <h3 class="font-bold text-lg mb-6" style="color:#E8EDF3;">Informasi Kontak</h3>
+
+    <div class="space-y-4">
+      {
+        items.map((item) => (
+          <div class="flex items-start gap-4">
+            <div
+              class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 text-lg"
+              style="background:linear-gradient(135deg,#1E3A57,#2E567C);"
+            >
+              {item.icon}
+            </div>
+            <div class="min-w-0">
+              <p
+                class="text-[11px] font-bold uppercase tracking-[0.15em] mb-0.5"
+                style="color:#9AAFC4;"
+              >
+                {item.label}
+              </p>
+              <a
+                href={item.href}
+                target={item.href.startsWith("http") ? "_blank" : undefined}
+                rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                class="text-sm break-all transition-colors"
+                style="color:#C5D0DC;"
+                onmouseover="this.style.color='#E8EDF3'"
+                onmouseout="this.style.color='#C5D0DC'"
+              >
+                {item.value}
+              </a>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="h-px my-5" style="background:rgba(155,175,196,0.07);"></div>
+
+    <div class="flex gap-3">
+      <a
+        href={SITE.instagram}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-medium transition-colors"
+        style="background:rgba(219,39,119,0.08);color:#db2777;"
+        onmouseover="this.style.background='rgba(219,39,119,0.14)'"
+        onmouseout="this.style.background='rgba(219,39,119,0.08)'"
+      >
+        Instagram
+      </a>
+      <a
+        href={SITE.youtubeChannel}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-medium transition-colors"
+        style="background:rgba(220,38,38,0.08);color:#dc2626;"
+        onmouseover="this.style.background='rgba(220,38,38,0.14)'"
+        onmouseout="this.style.background='rgba(220,38,38,0.08)'"
+      >
+        YouTube
+      </a>
+    </div>
+  </div>
+
+  <div
+    class="rounded-2xl overflow-hidden"
+    style="border:1px solid rgba(155,175,196,0.09);box-shadow:0 2px 20px rgba(0,0,0,0.32);"
+  >
+    <iframe
+      src={mapsUrl}
+      width="100%"
+      height="260"
+      style="border:0;display:block;"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title={`Lokasi ${SITE.shortName}`}></iframe>
+  </div>
+</div>

@@ -1,0 +1,126 @@
+---
+import { SITE } from "@config/site";
+
+const items = [
+  {
+    icon: "🏅",
+    title: "Akreditasi A (Unggul)",
+    desc: "Terakreditasi A (Unggul) oleh BAN-S/M — memenuhi standar nasional pendidikan tertinggi dengan jaminan mutu berkelanjutan.",
+    link: `${SITE.mainUrl}/akreditasi`,
+    wide: true,
+  },
+  {
+    icon: "📖",
+    title: "Kurikulum Berbasis Cinta",
+    desc: "Pendekatan saintifik & STEAM dipadukan Program Tahfidz Al-Qur'an Intensif.",
+    link: `${SITE.mainUrl}/kurikulum`,
+    wide: false,
+  },
+  {
+    icon: "🎯",
+    title: "Inkubator Talenta",
+    desc: "OSIM, Pramuka, Paskibra, PMR, Adiwiyata, Sispala, Olahraga Prestasi, Jurnalistik.",
+    link: `${SITE.mainUrl}/ekstrakurikuler`,
+    wide: false,
+  },
+  {
+    icon: "💻",
+    title: "Ekosistem Belajar Modern",
+    desc: "Perpustakaan Digital, Lab Sains & Komputer, E-Learning/CBT, Rapor Digital, Presensi Online.",
+    link: `${SITE.mainUrl}/about`,
+    wide: false,
+  },
+  {
+    icon: "🌿",
+    title: "Madrasah Adiwiyata",
+    desc: "Pelopor madrasah berwawasan lingkungan — menanamkan kesadaran ekologis mendalam.",
+    link: `${SITE.mainUrl}/pecinta-alam`,
+    wide: false,
+  },
+  {
+    icon: "⚖️",
+    title: "Zona Integritas (WBK)",
+    desc: "Pelopor Wilayah Bebas Korupsi. Transparansi dan akuntabilitas sebagai budaya madrasah.",
+    link: `${SITE.mainUrl}/zona-integritas`,
+    wide: true,
+  },
+];
+---
+
+<section class="py-24" style="background:#0A1828;">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-14">
+      <span class="eyebrow justify-center">Mengapa MTsN 1 Pandeglang?</span>
+      <h2 class="section-title mt-3">Keunggulan Madrasah</h2>
+      <p class="section-sub max-w-lg mx-auto">
+        Bukan sekadar madrasah — inkubator masa depan yang mencetak generasi berkarakter,
+        berprestasi, dan beriman.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" id="bento-grid">
+      {
+        items.map((item) => (
+          <a
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            class:list={[
+              "bento-card group block rounded-2xl p-7 transition-all duration-300",
+              item.wide ? "lg:col-span-2" : "",
+            ]}
+            style="background:#0D1F30;border:1px solid rgba(155,175,196,0.09);box-shadow:0 2px 16px rgba(0,0,0,0.28);"
+            onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 40px rgba(0,0,0,0.44)';this.style.borderColor='rgba(155,175,196,0.18)';"
+            onmouseout="this.style.transform='';this.style.boxShadow='0 2px 16px rgba(0,0,0,0.28)';this.style.borderColor='rgba(155,175,196,0.09)';"
+          >
+            <div
+              class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-5 group-hover:scale-105 transition-transform"
+              style="background:linear-gradient(135deg,#1E3A57,#2E567C);box-shadow:0 4px 14px rgba(46,86,124,0.30);"
+            >
+              {item.icon}
+            </div>
+            <h3 class="font-bold text-[15px] mb-2 leading-snug" style="color:#E8EDF3;">
+              {item.title}
+            </h3>
+            <p class="text-sm leading-relaxed" style="color:#6F8EAC;">
+              {item.desc}
+            </p>
+            <span
+              class="inline-flex items-center gap-1 mt-4 text-xs font-semibold group-hover:gap-2 transition-all"
+              style="color:#9AAFC4;"
+            >
+              Selengkapnya <span>→</span>
+            </span>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+  gsap.registerPlugin(ScrollTrigger);
+
+  const cards = document.querySelectorAll(".bento-card");
+
+  // Pastikan kartu selalu visible sebagai fallback
+  cards.forEach((c) => ((c as HTMLElement).style.opacity = "1"));
+
+  ScrollTrigger.create({
+    trigger: "#bento-grid",
+    start: "top 92%",
+    onEnter: () => {
+      gsap.fromTo(
+        cards,
+        { y: 28, opacity: 0 },
+        { y: 0, opacity: 1, stagger: 0.07, duration: 0.55, ease: "power3.out" }
+      );
+    },
+    once: true,
+  });
+
+  // Jika sudah lewat saat halaman dimuat (misal refresh di tengah halaman)
+  ScrollTrigger.refresh();
+</script>

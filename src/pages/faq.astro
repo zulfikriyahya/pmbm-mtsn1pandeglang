@@ -1,0 +1,21 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import FAQSearch from "@components/faq/FAQSearch.tsx";
+import faqData from "@data/faq.json";
+---
+
+<BaseLayout
+  title="FAQ"
+  description="Pertanyaan umum seputar penerimaan murid baru MTsN 1 Pandeglang"
+>
+  <section style="background:#07121C;padding:4rem 0;">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <span class="eyebrow justify-center">Bantuan</span>
+        <h1 class="section-title mt-3">Pertanyaan Umum</h1>
+        <p class="section-sub">Seputar Penerimaan Murid Baru MTsN 1 Pandeglang</p>
+      </div>
+      <FAQSearch client:only="react" faqs={faqData} />
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "nama": "Hj. Yanti Mariah, S.S., M.Pd.",
+    "nip": "198008072005012006",
+    "foto": "/assets/personil/yanti.png",
+    "jabatan": "Penanggungjawab",
+    "kontak": {
+      "wa": "",
+      "email": ""
+    },
+    "deskripsi": "Kepala Madrasah Tsanawiyah Negeri 1 Pandeglang"
+  },
+  {
+    "id": 2,
+    "nama": "Umar Mu'tamar, S.Ag.",
+    "nip": "196903061998031004",
+    "foto": "/assets/personil/umar.png",
+    "jabatan": "Ketua Panitia",
+    "kontak": {
+      "wa": "",
+      "email": ""
+    },
+    "deskripsi": "Mengkoordinasikan seluruh kegiatan PMBM Bersama 2026/2027"
+  },
+  {
+    "id": 3,
+    "nama": "Mahbudin, S.Pd.I., M.Pd.",
+    "nip": "198005022005011006",
+    "foto": "/assets/personil/mahbudin.png",
+    "jabatan": "Sekretaris",
+    "kontak": {
+      "wa": "",
+      "email": ""
+    },
+    "deskripsi": "Bertanggung jawab atas administrasi dan dokumentasi kepanitiaan"
+  },
+  {
+    "id": 4,
+    "nama": "Didin Rosyidin, S.E., M.A.P.",
+    "nip": "197608262005011000",
+    "foto": "/assets/personil/didin.png",
+    "jabatan": "Bendahara",
+    "kontak": {
+      "wa": "",
+      "email": ""
+    },
+    "deskripsi": "Mengelola keuangan dan anggaran pelaksanaan PMBM"
+  },
+  {
+    "id": 5,
+    "nama": "Siti Wahidoh, S.Pd.I.",
+    "nip": "197004012000032002",
+    "foto": "/assets/personil/siti.png",
+    "jabatan": "Anggota",
+    "kontak": {
+      "wa": "",
+      "email": ""
+    },
+    "deskripsi": "Membantu pelaksanaan seluruh kegiatan PMBM Bersama"
+  },
+  {
+    "id": 6,
+    "nama": "Darsih, S.Pd.",
+    "nip": "197406261999032002",
+    "foto": "/assets/personil/darsih.png",
+    "jabatan": "Anggota",
+    "kontak": {
+      "wa": "",
+      "email": ""
+    },
+    "deskripsi": "Membantu pelaksanaan seluruh kegiatan PMBM Bersama"
+  },
+  {
+    "id": 7,
+    "nama": "Hartono, S.Pd.",
+    "nip": "196806022005011003",
+    "foto": "/assets/personil/hartono.png",
+    "jabatan": "Anggota",
+    "kontak": {
+      "wa": "",
+      "email": ""
+    },
+    "deskripsi": "Membantu pelaksanaan seluruh kegiatan PMBM Bersama"
+  },
+  {
+    "id": 8,
+    "nama": "Wulan Novita, S.Pd.",
+    "nip": "198211132014112003",
+    "foto": "/assets/personil/wulan.png",
+    "jabatan": "Anggota",
+    "kontak": {
+      "wa": "",
+      "email": ""
+    },
+    "deskripsi": "Membantu pelaksanaan seluruh kegiatan PMBM Bersama"
+  },
+  {
+    "id": 9,
+    "nama": "Yeyen Nurazizah, S.Pd.",
+    "nip": "199209242019032023",
+    "foto": "/assets/personil/yeyen.png",
+    "jabatan": "Anggota",
+    "kontak": {
+      "wa": "",
+      "email": ""
+    },
+    "deskripsi": "Membantu pelaksanaan seluruh kegiatan PMBM Bersama"
+  },
+  {
+    "id": 10,
+    "nama": "Yahya Zulfikri",
+    "nip": "200001142025211016",
+    "foto": "/assets/personil/yahya.png",
+    "jabatan": "Anggota",
+    "kontak": {
+      "wa": "",
+      "email": ""
+    },
+    "deskripsi": "Membantu pelaksanaan seluruh kegiatan PMBM Bersama"
+  },
+  {
+    "id": 11,
+    "nama": "Aris Nurdiansyah, S.Pd.",
+    "nip": "198608172025211019",
+    "foto": "/assets/personil/aris.png",
+    "jabatan": "Anggota",
+    "kontak": {
+      "wa": "",
+      "email": ""
+    },
+    "deskripsi": "Membantu pelaksanaan seluruh kegiatan PMBM Bersama"
+  },
+  {
+    "id": 12,
+    "nama": "Pupung Purnamasari, S.Pd.I.",
+    "nip": "199004102025212012",
+    "foto": "/assets/personil/pupung.png",
+    "jabatan": "Anggota",
+    "kontak": {
+      "wa": "",
+      "email": ""
+    },
+    "deskripsi": "Membantu pelaksanaan seluruh kegiatan PMBM Bersama"
+  },
+  {
+    "id": 13,
+    "nama": "Rafif Nugraha Muadz, S.Psi.",
+    "nip": "200011042025211015",
+    "foto": "/assets/personil/rafif.png",
+    "jabatan": "Anggota",
+    "kontak": {
+      "wa": "",
+      "email": ""
+    },
+    "deskripsi": "Membantu pelaksanaan seluruh kegiatan PMBM Bersama"
+  }
+]

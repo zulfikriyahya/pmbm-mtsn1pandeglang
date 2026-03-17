@@ -1,0 +1,263 @@
+---
+import panitiaData from "@data/panitia.json";
+
+const hierarki = [
+  "Penanggungjawab",
+  "Ketua Panitia",
+  "Sekretaris",
+  "Bendahara",
+  "Koordinator Pendaftaran",
+  "Koordinator Seleksi & Penilaian",
+  "Koordinator Teknologi Informasi",
+  "Koordinator Humas & Publikasi",
+  "Anggota",
+];
+
+const sorted = [...panitiaData].sort((a, b) => {
+  const ai = hierarki.indexOf(a.jabatan);
+  const bi = hierarki.indexOf(b.jabatan);
+  return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
+});
+---
+
+<section class="py-20" style="background:#07121C;">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-14">
+      <span class="eyebrow justify-center">Struktur Kepanitiaan</span>
+      <h2 class="section-title mt-3">Panitia PMBM Bersama</h2>
+      <p class="section-sub">Madrasah Tsanawiyah Negeri 1 Pandeglang — TP 2026/2027</p>
+    </div>
+
+    <!-- Slider wrapper -->
+    <div class="relative">
+      <!-- Fade masks -->
+      <div
+        id="fade-left"
+        class="absolute left-0 top-0 bottom-0 w-12 z-10 pointer-events-none opacity-0 transition-opacity duration-300"
+        style="background:linear-gradient(to right,#07121C,transparent);"
+      ></div>
+      <div
+        id="fade-right"
+        class="absolute right-0 top-0 bottom-0 w-12 z-10 pointer-events-none opacity-0 transition-opacity duration-300"
+        style="background:linear-gradient(to left,#07121C,transparent);"
+      ></div>
+
+      <!-- Track viewport -->
+      <div class="overflow-hidden">
+        <div id="panitia-track" class="flex gap-4 py-2" style="transition:transform 0.45s cubic-bezier(0.22,1,0.36,1);">
+          {sorted.map((p) => (
+            <div
+              class="panitia-card flex-shrink-0 w-52 flex flex-col items-center text-center rounded-2xl p-5"
+              style="background:#0D1F30;border:1px solid rgba(155,175,196,0.09);box-shadow:0 2px 20px rgba(0,0,0,0.28);transition:all 0.28s ease;"
+              onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 10px 40px rgba(0,0,0,0.44)';this.style.borderColor='rgba(155,175,196,0.20)';"
+              onmouseout="this.style.transform='';this.style.boxShadow='0 2px 20px rgba(0,0,0,0.28)';this.style.borderColor='rgba(155,175,196,0.09)';"
+            >
+              <!-- Avatar -->
+              <div
+                class="w-20 h-20 rounded-full overflow-hidden mb-4 flex-shrink-0"
+                style="background:linear-gradient(135deg,#1E3A57,#2E567C);outline:3px solid rgba(155,175,196,0.12);outline-offset:2px;"
+              >
+                {p.foto ? (
+                  <img
+                    src={p.foto}
+                    alt={p.nama}
+                    class="w-full h-full object-cover object-top"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div class="w-full h-full flex items-center justify-center font-bold text-2xl text-white">
+                    {p.nama.charAt(0)}
+                  </div>
+                )}
+              </div>
+
+              <!-- Badge -->
+              <span
+                class="inline-block text-[11px] font-semibold px-2.5 py-0.5 rounded-full mb-2"
+                style="background:rgba(155,175,196,0.10);color:#9AAFC4;border:1px solid rgba(155,175,196,0.14);"
+              >
+                {p.jabatan}
+              </span>
+
+              <!-- Nama -->
+              <h3 class="font-bold text-sm leading-snug" style="color:#E8EDF3;">{p.nama}</h3>
+
+              <!-- Deskripsi -->
+              {p.deskripsi && (
+                <p class="text-[11px] leading-relaxed mt-1.5 line-clamp-2" style="color:#6F8EAC;">
+                  {p.deskripsi}
+                </p>
+              )}
+
+              <!-- Kontak -->
+              {(p.kontak?.wa || p.kontak?.email) && (
+                <div class="flex gap-2 mt-3 flex-wrap justify-center">
+                  {p.kontak?.wa && (
+                    <a
+                      href={`https://wa.me/${p.kontak.wa}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-[11px] font-medium px-2.5 py-1 rounded-full transition-colors"
+                      style="background:rgba(155,175,196,0.08);color:#9AAFC4;border:1px solid rgba(155,175,196,0.12);"
+                      onmouseover="this.style.background='rgba(155,175,196,0.15)';this.style.color='#C5D0DC';"
+                      onmouseout="this.style.background='rgba(155,175,196,0.08)';this.style.color='#9AAFC4';"
+                    >
+                      WhatsApp
+                    </a>
+                  )}
+                  {p.kontak?.email && (
+                    <a
+                      href={`mailto:${p.kontak.email}`}
+                      class="text-[11px] font-medium px-2.5 py-1 rounded-full transition-colors"
+                      style="background:rgba(155,175,196,0.08);color:#9AAFC4;border:1px solid rgba(155,175,196,0.12);"
+                      onmouseover="this.style.background='rgba(155,175,196,0.15)';this.style.color='#C5D0DC';"
+                      onmouseout="this.style.background='rgba(155,175,196,0.08)';this.style.color='#9AAFC4';"
+                    >
+                      Email
+                    </a>
+                  )}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="flex items-center justify-between mt-6">
+      <!-- Dots -->
+      <div id="panitia-dots" class="flex gap-1.5 items-center"></div>
+
+      <!-- Arrows -->
+      <div class="flex gap-2">
+        <button
+          id="btn-prev"
+          class="w-9 h-9 rounded-full flex items-center justify-center transition-all duration-200"
+          style="background:rgba(155,175,196,0.04);border:1px solid rgba(155,175,196,0.07);color:rgba(155,175,196,0.20);cursor:not-allowed;"
+          aria-label="Sebelumnya"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button
+          id="btn-next"
+          class="w-9 h-9 rounded-full flex items-center justify-center transition-all duration-200"
+          style="background:rgba(155,175,196,0.10);border:1px solid rgba(155,175,196,0.18);color:#9AAFC4;cursor:pointer;"
+          aria-label="Berikutnya"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script is:inline>
+  (function () {
+    const CARD_W   = 224; // 208px + 16px gap
+    const total    = document.querySelectorAll(".panitia-card").length;
+    const track    = document.getElementById("panitia-track");
+    const dotsEl   = document.getElementById("panitia-dots");
+    const btnPrev  = document.getElementById("btn-prev");
+    const btnNext  = document.getElementById("btn-next");
+    const fadeL    = document.getElementById("fade-left");
+    const fadeR    = document.getElementById("fade-right");
+
+    let idx     = 0;
+    let visible = 4;
+
+    function getVisible() {
+      const w = window.innerWidth;
+      return w < 640 ? 1 : w < 768 ? 2 : w < 1024 ? 3 : 4;
+    }
+
+    function maxIdx() {
+      return Math.max(0, total - visible);
+    }
+
+    function buildDots() {
+      dotsEl.innerHTML = "";
+      const count = maxIdx() + 1;
+      for (let i = 0; i < count; i++) {
+        const b = document.createElement("button");
+        b.setAttribute("aria-label", "Slide " + (i + 1));
+        b.style.cssText = "height:6px;border-radius:99px;transition:all 0.3s;border:none;padding:0;cursor:pointer;";
+        b.addEventListener("click", () => slideTo(i));
+        dotsEl.appendChild(b);
+      }
+      updateDots();
+    }
+
+    function updateDots() {
+      const btns = dotsEl.querySelectorAll("button");
+      btns.forEach((b, i) => {
+        b.style.width      = i === idx ? "20px" : "6px";
+        b.style.background = i === idx
+          ? "linear-gradient(135deg,#1E3A57,#2E567C)"
+          : "rgba(155,175,196,0.20)";
+      });
+    }
+
+    function updateArrows() {
+      const canL = idx > 0;
+      const canR = idx < maxIdx();
+
+      btnPrev.style.background = canL ? "rgba(155,175,196,0.10)" : "rgba(155,175,196,0.04)";
+      btnPrev.style.borderColor = canL ? "rgba(155,175,196,0.18)" : "rgba(155,175,196,0.07)";
+      btnPrev.style.color      = canL ? "#9AAFC4" : "rgba(155,175,196,0.20)";
+      btnPrev.style.cursor     = canL ? "pointer" : "not-allowed";
+
+      btnNext.style.background = canR ? "rgba(155,175,196,0.10)" : "rgba(155,175,196,0.04)";
+      btnNext.style.borderColor = canR ? "rgba(155,175,196,0.18)" : "rgba(155,175,196,0.07)";
+      btnNext.style.color      = canR ? "#9AAFC4" : "rgba(155,175,196,0.20)";
+      btnNext.style.cursor     = canR ? "pointer" : "not-allowed";
+
+      fadeL.style.opacity = canL ? "1" : "0";
+      fadeR.style.opacity = canR ? "1" : "0";
+    }
+
+    function slideTo(n) {
+      idx = Math.max(0, Math.min(n, maxIdx()));
+      track.style.transform = "translateX(" + (-idx * CARD_W) + "px)";
+      updateDots();
+      updateArrows();
+    }
+
+    let autoTimer = null;
+
+    function startAuto() {
+      stopAuto();
+      autoTimer = setInterval(() => {
+        slideTo(idx >= maxIdx() ? 0 : idx + 1);
+      }, 3000);
+    }
+
+    function stopAuto() {
+      if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
+    }
+
+    function init() {
+      visible = getVisible();
+      idx = Math.min(idx, maxIdx());
+      track.style.transform = "translateX(" + (-idx * CARD_W) + "px)";
+      buildDots();
+      updateArrows();
+    }
+
+    btnPrev.addEventListener("click", () => { stopAuto(); slideTo(idx - 1); startAuto(); });
+    btnNext.addEventListener("click", () => { stopAuto(); slideTo(idx + 1); startAuto(); });
+
+    // Pause saat hover
+    track.parentElement.addEventListener("mouseenter", stopAuto);
+    track.parentElement.addEventListener("mouseleave", startAuto);
+
+    window.addEventListener("resize", () => { visible = getVisible(); init(); });
+
+    init();
+    startAuto();
+  })();
+</script>

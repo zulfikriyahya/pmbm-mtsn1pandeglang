@@ -1,0 +1,15 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import PersonilSlider from "@components/personil/PersonilSlider.tsx";
+import personilData from "@data/personil.json";
+
+const guru = personilData.filter((p: any) => p.kategori === "guru");
+const staf = personilData.filter((p: any) => p.kategori === "staf");
+---
+
+<BaseLayout
+  title="Personil Madrasah"
+  description="Daftar tenaga pendidik dan kependidikan Madrasah Tsanawiyah Negeri 1 Pandeglang"
+>
+  <PersonilSlider client:only="react" guru={guru} staf={staf} />
+</BaseLayout>

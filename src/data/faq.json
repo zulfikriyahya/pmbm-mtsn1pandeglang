@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "kategori": "Pendaftaran",
+    "pertanyaan": "Apa itu PMBM Bersama?",
+    "jawaban": "PMBM Bersama adalah sistem Penerimaan Murid Baru Madrasah yang dikelola secara terpadu oleh Kantor Wilayah Kementerian Agama Provinsi Banten. Sistem ini memungkinkan calon peserta didik mendaftar ke madrasah pilihan secara online melalui satu portal terpadu."
+  },
+  {
+    "id": 2,
+    "kategori": "Pendaftaran",
+    "pertanyaan": "Bagaimana cara mendaftar ke MTsN 1 Pandeglang?",
+    "jawaban": "Pendaftaran dilakukan secara online melalui website https://pmbm-kanwilbanten.com/. Langkahnya: (1) Buat akun di portal, (2) Isi formulir pendaftaran, (3) Upload berkas persyaratan, (4) Cetak kartu peserta, (5) Ikuti tes seleksi."
+  },
+  {
+    "id": 3,
+    "kategori": "Pendaftaran",
+    "pertanyaan": "Apakah pendaftaran dikenakan biaya?",
+    "jawaban": "Pendaftaran PMBM Bersama tidak dipungut biaya (gratis). Apabila ada pihak yang meminta biaya pendaftaran, harap segera laporkan kepada panitia resmi."
+  },
+  {
+    "id": 4,
+    "kategori": "Pendaftaran",
+    "pertanyaan": "Berapa kuota penerimaan murid baru?",
+    "jawaban": "Kuota penerimaan disesuaikan dengan kapasitas ruang kelas yang tersedia dan akan diumumkan secara resmi pada saat sosialisasi. Informasi terbaru dapat dipantau di website ini."
+  },
+  {
+    "id": 5,
+    "kategori": "Persyaratan Dokumen",
+    "pertanyaan": "Apa saja berkas yang harus disiapkan untuk mendaftar?",
+    "jawaban": "Berkas yang diperlukan: (1) Akta kelahiran asli dan fotokopi, (2) Kartu Keluarga asli dan fotokopi, (3) NISN (Nomor Induk Siswa Nasional), (4) Ijazah/SKHUN SD/MI asli dan fotokopi, (5) Pas foto terbaru ukuran 3x4 (latar merah), (6) Surat keterangan sehat dari dokter."
+  },
+  {
+    "id": 6,
+    "kategori": "Persyaratan Dokumen",
+    "pertanyaan": "Bagaimana cara mendapatkan NISN?",
+    "jawaban": "NISN dapat dicek melalui website resmi Kemendikbud di nisn.data.kemdikbud.go.id. Jika belum terdaftar, hubungi operator sekolah asal untuk proses pengurusan NISN."
+  },
+  {
+    "id": 7,
+    "kategori": "Persyaratan Dokumen",
+    "pertanyaan": "Apakah berkas harus diupload dalam format tertentu?",
+    "jawaban": "Berkas diupload dalam format JPG/PNG/PDF dengan ukuran maksimal 2MB per file. Pastikan hasil scan atau foto dokumen jelas dan mudah terbaca."
+  },
+  {
+    "id": 8,
+    "kategori": "Persyaratan Dokumen",
+    "pertanyaan": "Bagaimana jika berkas pendaftaran tidak lengkap?",
+    "jawaban": "Panitia akan menginformasikan kekurangan berkas melalui akun pendaftaran. Calon peserta diberikan waktu hingga batas akhir periode verifikasi untuk melengkapi berkas yang kurang."
+  },
+  {
+    "id": 9,
+    "kategori": "Seleksi & Tes",
+    "pertanyaan": "Apakah ada tes seleksi?",
+    "jawaban": "Ya, terdapat tes seleksi yang terdiri dari: (1) Tes kemampuan akademik dasar (Matematika, Bahasa Indonesia, IPA), (2) Tes baca tulis Al-Qur'an, (3) Wawancara ringan untuk menilai motivasi dan karakter calon peserta."
+  },
+  {
+    "id": 10,
+    "kategori": "Seleksi & Tes",
+    "pertanyaan": "Apakah tersedia jalur prestasi?",
+    "jawaban": "Ya, tersedia jalur prestasi untuk calon peserta yang memiliki prestasi akademik (peringkat 1-3 di kelas) maupun non-akademik (juara lomba tingkat kecamatan/kabupaten ke atas). Sertakan bukti prestasi saat pendaftaran."
+  },
+  {
+    "id": 11,
+    "kategori": "Seleksi & Tes",
+    "pertanyaan": "Apa yang harus dibawa saat tes seleksi?",
+    "jawaban": "Peserta wajib membawa: (1) Kartu peserta yang telah dicetak dari portal pendaftaran, (2) Alat tulis, (3) Pakaian seragam SD/MI atau pakaian rapi dan sopan."
+  },
+  {
+    "id": 12,
+    "kategori": "Seleksi & Tes",
+    "pertanyaan": "Kapan dan di mana pengumuman hasil seleksi?",
+    "jawaban": "Pengumuman hasil seleksi dilaksanakan pada tanggal 20 Mei 2026 dan dapat diakses melalui portal PMBM, website MTsN 1 Pandeglang, dan papan pengumuman madrasah."
+  },
+  {
+    "id": 13,
+    "kategori": "Daftar Ulang & Biaya",
+    "pertanyaan": "Apa saja yang perlu disiapkan saat daftar ulang?",
+    "jawaban": "Saat daftar ulang, peserta yang diterima wajib membawa: (1) Bukti kelulusan/diterima dari portal PMBM, (2) Seluruh berkas asli yang telah diupload sebelumnya, (3) Mengisi formulir daftar ulang di madrasah."
+  },
+  {
+    "id": 14,
+    "kategori": "Daftar Ulang & Biaya",
+    "pertanyaan": "Apakah ada biaya yang harus dibayarkan setelah diterima?",
+    "jawaban": "Informasi mengenai biaya pendidikan akan disampaikan secara resmi oleh pihak madrasah pada saat daftar ulang. MTsN 1 Pandeglang sebagai madrasah negeri berkomitmen memberikan pendidikan berkualitas dengan biaya yang terjangkau."
+  },
+  {
+    "id": 15,
+    "kategori": "Lainnya",
+    "pertanyaan": "Di mana lokasi MTsN 1 Pandeglang?",
+    "jawaban": "MTsN 1 Pandeglang beralamat di Jl. Raya Labuan Km. 5,7 Palurahan, Kaduhejo, Pandeglang, Banten 42253. Peta lokasi lengkap tersedia di halaman Kontak website ini."
+  },
+  {
+    "id": 16,
+    "kategori": "Lainnya",
+    "pertanyaan": "Siapa yang bisa dihubungi untuk informasi lebih lanjut?",
+    "jawaban": "Untuk informasi lebih lanjut, hubungi panitia PMBM MTsN 1 Pandeglang melalui WhatsApp atau email yang tersedia di halaman Kontak. Kami siap melayani pada hari kerja pukul 07.30–14.00 WIB."
+  },
+  {
+    "id": 17,
+    "kategori": "Lainnya",
+    "pertanyaan": "Apa itu MATSAMA?",
+    "jawaban": "MATSAMA (Masa Ta'aruf Siswa Madrasah) adalah kegiatan orientasi bagi peserta didik baru yang dilaksanakan pada awal tahun pelajaran. Kegiatan ini bertujuan memperkenalkan lingkungan madrasah, budaya islami, aturan, dan kegiatan ekstrakurikuler yang tersedia."
+  }
+]

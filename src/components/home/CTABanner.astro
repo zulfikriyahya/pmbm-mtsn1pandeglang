@@ -1,0 +1,85 @@
+---
+import { SITE } from "@config/site";
+---
+
+<section
+  class="relative py-16 overflow-hidden"
+  style="background:linear-gradient(135deg,#030A11,#07121C 50%,#0D1F30);"
+>
+  <!-- subtle pattern -->
+  <div
+    class="absolute inset-0 opacity-[0.03] bg-[url('/assets/pattern/islamic.svg')] bg-repeat bg-[length:100px]"
+  >
+  </div>
+  <!-- glow -->
+  <div
+    class="absolute top-1/2 left-1/4 w-96 h-96 rounded-full blur-3xl opacity-[0.07] pointer-events-none"
+    style="background:radial-gradient(circle,#2E567C,transparent);"
+  >
+  </div>
+
+  <div class="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 text-center text-white">
+    <div
+      class="flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-[0.2em] mb-5"
+      style="color:#9AAFC4;"
+    >
+      <span class="block w-6 h-0.5 rounded-full flex-shrink-0" style="background:#9AAFC4;"></span>
+      Tahun Pelajaran {SITE.tahunPelajaran}
+      <span class="block w-6 h-0.5 rounded-full flex-shrink-0" style="background:#9AAFC4;"></span>
+    </div>
+    <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gradient-light">
+      Siap Bergabung Bersama Kami?
+    </h2>
+    <p
+      class="mb-10 text-base leading-relaxed max-w-xl mx-auto"
+      style="color:rgba(155,175,196,0.50);"
+    >
+      Daftarkan putra-putri Anda dan jadilah bagian dari keluarga besar {SITE.shortName} — madrasah berakreditasi
+      Unggul (A), berprestasi, dan berkarakter.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-3 justify-center mb-10">
+      <a
+        href={SITE.registrationUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-white text-[15px] px-8 py-4"
+      >
+        Daftar Sekarang
+      </a>
+      <a href="/faq" class="btn-outline-white text-[15px] px-8 py-4">Lihat FAQ</a>
+    </div>
+
+    <div class="flex justify-center items-center gap-4 flex-wrap">
+      <span class="text-[11px]" style="color:rgba(155,175,196,0.20);">Bagikan:</span>
+      {
+        [
+          {
+            label: "WhatsApp",
+            href: `https://wa.me/?text=${encodeURIComponent("Pendaftaran PMBM MTsN 1 Pandeglang TP 2026/2027! " + SITE.registrationUrl)}`,
+          },
+          {
+            label: "X (Twitter)",
+            href: `https://twitter.com/intent/tweet?text=${encodeURIComponent("Pendaftaran PMBM MTsN 1 Pandeglang TP 2026/2027 dibuka! " + SITE.registrationUrl)}`,
+          },
+          { label: "Instagram", href: SITE.instagram },
+        ].map((s, i) => (
+          <>
+            {i > 0 && <span style="color:rgba(155,175,196,0.10);">·</span>}
+            <a
+              href={s.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-xs font-medium transition-colors"
+              style="color:rgba(155,175,196,0.30);"
+              onmouseover="this.style.color='rgba(155,175,196,0.75)'"
+              onmouseout="this.style.color='rgba(155,175,196,0.30)'"
+            >
+              {s.label}
+            </a>
+          </>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,682 @@
+[
+  {
+    "id": 1,
+    "nama": "Hj. Yanti Mariah, S.S., M.Pd.",
+    "nip": "198008072005012006",
+    "foto": "/assets/personil/yanti.png",
+    "jabatan": "Kepala Madrasah",
+    "kategori": "guru",
+    "quotes": "Madrasah bukan hanya tempat belajar, melainkan rumah kedua tempat karakter dibentuk.",
+    "sosmed": {}
+  },
+  {
+    "id": 2,
+    "nama": "Mahbudin, S.Pd.I., M.Pd.",
+    "nip": "198005022005011006",
+    "foto": "/assets/personil/mahbudin.png",
+    "jabatan": "Wakamad Kurikulum",
+    "kategori": "guru",
+    "quotes": "Kurikulum yang baik adalah jembatan antara ilmu dan kehidupan nyata.",
+    "sosmed": {}
+  },
+  {
+    "id": 3,
+    "nama": "Siti Wahidoh, S.Pd.I.",
+    "nip": "197004012000032002",
+    "foto": "/assets/personil/siti.png",
+    "jabatan": "Wakamad Kesiswaan",
+    "kategori": "guru",
+    "quotes": "Siswa yang berkarakter adalah investasi terbaik bangsa.",
+    "sosmed": {}
+  },
+  {
+    "id": 4,
+    "nama": "Darsih, S.Pd.",
+    "nip": "197406261999032002",
+    "foto": "/assets/personil/darsih.png",
+    "jabatan": "Wakamad Humas",
+    "kategori": "guru",
+    "quotes": "Komunikasi yang baik adalah pondasi kepercayaan masyarakat.",
+    "sosmed": {}
+  },
+  {
+    "id": 5,
+    "nama": "Hartono, S.Pd.",
+    "nip": "196806022005011003",
+    "foto": "/assets/personil/hartono.png",
+    "jabatan": "Wakamad Sarana & Prasarana",
+    "kategori": "guru",
+    "quotes": "Lingkungan belajar yang baik lahir dari tangan yang peduli.",
+    "sosmed": {}
+  },
+  {
+    "id": 6,
+    "nama": "H. Solichul Hadi, S.Ag., M.Pd.",
+    "nip": "197310052003121001",
+    "foto": "/assets/personil/solichul.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Ilmu adalah cahaya, dan guru adalah yang menyalakannya.",
+    "sosmed": {}
+  },
+  {
+    "id": 7,
+    "nama": "Samudi, S.S.",
+    "nip": "197906032005011004",
+    "foto": "/assets/personil/samudi.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Bahasa adalah jendela pikiran, rawat ia dengan cermat.",
+    "sosmed": {}
+  },
+  {
+    "id": 8,
+    "nama": "Anisah, S.Ag.",
+    "nip": "196812161996032001",
+    "foto": "/assets/personil/anisah.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Agama bukan hafalan semata, melainkan cara hidup yang indah.",
+    "sosmed": {}
+  },
+  {
+    "id": 9,
+    "nama": "Nyana, S.Pd.",
+    "nip": "196912141994031002",
+    "foto": "/assets/personil/nyana.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Setiap anak adalah bintang yang menunggu untuk bersinar.",
+    "sosmed": {}
+  },
+  {
+    "id": 10,
+    "nama": "Delmias, S.Pd.",
+    "nip": "196610141994121002",
+    "foto": "/assets/personil/delmias.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Mendidik adalah seni menanam yang buahnya dipetik di masa depan.",
+    "sosmed": {}
+  },
+  {
+    "id": 11,
+    "nama": "Asnawi, S.Ag.",
+    "nip": "196708181998031003",
+    "foto": "/assets/personil/asnawi.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Taqwa adalah kompas terbaik dalam mengarungi kehidupan.",
+    "sosmed": {}
+  },
+  {
+    "id": 12,
+    "nama": "Masitoh, S.Ag.",
+    "nip": "196805132005012004",
+    "foto": "/assets/personil/masitoh.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Keikhlasan dalam mengajar adalah doa yang tak pernah putus.",
+    "sosmed": {}
+  },
+  {
+    "id": 13,
+    "nama": "Cucu Wakiah, S.Pd.",
+    "nip": "197507232000122001",
+    "foto": "/assets/personil/cucu.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Sabar dan konsisten adalah kunci keberhasilan seorang pendidik.",
+    "sosmed": {}
+  },
+  {
+    "id": 14,
+    "nama": "Jaya Supiyatna, S.Ag.",
+    "nip": "197002022003121003",
+    "foto": "/assets/personil/jaya.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Murid yang sukses adalah mahkota terindah seorang guru.",
+    "sosmed": {}
+  },
+  {
+    "id": 15,
+    "nama": "Aat Nurhayati, S.E.",
+    "nip": "197108292005012004",
+    "foto": "/assets/personil/aat.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Disiplin finansial dimulai dari pemahaman yang benar sejak dini.",
+    "sosmed": {}
+  },
+  {
+    "id": 16,
+    "nama": "Mayasari, S.Ag.",
+    "nip": "197606302005012003",
+    "foto": "/assets/personil/mayasari.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Akhlak mulia adalah warisan terbaik yang bisa kita titipkan.",
+    "sosmed": {}
+  },
+  {
+    "id": 17,
+    "nama": "Euis Sofi Sulasiah, S.Ag.",
+    "nip": "197801212005012006",
+    "foto": "/assets/personil/euis.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Setiap langkah kecil dalam belajar adalah kemajuan yang nyata.",
+    "sosmed": {}
+  },
+  {
+    "id": 18,
+    "nama": "Ikmal Mazaji, S.Pd.",
+    "nip": "198009062005011003",
+    "foto": "/assets/personil/ikmal.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Guru terbaik adalah yang terus belajar bersama siswanya.",
+    "sosmed": {}
+  },
+  {
+    "id": 19,
+    "nama": "Ipat Apipah, S.Si.",
+    "nip": "198010272005012006",
+    "foto": "/assets/personil/ipat.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Sains mengajarkan kita bahwa rasa ingin tahu adalah awal dari segalanya.",
+    "sosmed": {}
+  },
+  {
+    "id": 20,
+    "nama": "Bahtiar Rosad, S.Pd.I.",
+    "nip": "197112151993031003",
+    "foto": "/assets/personil/bahtiar.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Al-Qur'an adalah panduan hidup yang tak lekang oleh zaman.",
+    "sosmed": {}
+  },
+  {
+    "id": 21,
+    "nama": "Eti Sumyati, S.Ag.",
+    "nip": "197602172007102004",
+    "foto": "/assets/personil/eti.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Kasih sayang seorang guru adalah pupuk terbaik bagi tumbuhnya prestasi.",
+    "sosmed": {}
+  },
+  {
+    "id": 22,
+    "nama": "H. Kumyari, S.Ag.",
+    "nip": "197301192007011029",
+    "foto": "/assets/personil/kumyari.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Iman yang kuat adalah benteng kokoh di tengah arus perubahan.",
+    "sosmed": {}
+  },
+  {
+    "id": 23,
+    "nama": "Atiek Riany Rahayu, S.Pd.",
+    "nip": "198104142005012005",
+    "foto": "/assets/personil/atiek.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Kreativitas dalam mengajar lahir dari cinta terhadap profesi.",
+    "sosmed": {}
+  },
+  {
+    "id": 24,
+    "nama": "Endah Humaedah, S.Pd.",
+    "nip": "197902102006042007",
+    "foto": "/assets/personil/endah.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Setiap siswa berhak mendapat kesempatan yang sama untuk berkembang.",
+    "sosmed": {}
+  },
+  {
+    "id": 25,
+    "nama": "Ai Nurhidayati, S.Pd.",
+    "nip": "198201082009012009",
+    "foto": "/assets/personil/ai.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Hidayah terbaik adalah yang mengantarkan anak pada kemandirian.",
+    "sosmed": {}
+  },
+  {
+    "id": 26,
+    "nama": "Lina Nurfajriana, S.Ag.",
+    "nip": "197208312007102001",
+    "foto": "/assets/personil/lina.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Fajar ilmu selalu menyinari mereka yang tak pernah berhenti belajar.",
+    "sosmed": {}
+  },
+  {
+    "id": 27,
+    "nama": "H. Oji Ahmad Fauzi, S.Ag.",
+    "nip": "197106012014111002",
+    "foto": "/assets/personil/oji.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Kejujuran adalah mata pelajaran paling penting yang wajib diajarkan.",
+    "sosmed": {}
+  },
+  {
+    "id": 28,
+    "nama": "Yuniarti Indragiri, S.E.",
+    "nip": "197606112014112002",
+    "foto": "/assets/personil/yuniarti.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Literasi ekonomi sejak dini membentuk generasi yang mandiri.",
+    "sosmed": {}
+  },
+  {
+    "id": 29,
+    "nama": "Jaenudin, S.Pd.",
+    "nip": "196603012014111001",
+    "foto": "/assets/personil/jaenudin.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Pengalaman adalah guru terbaik, namun guru yang baik menciptakan pengalaman.",
+    "sosmed": {}
+  },
+  {
+    "id": 30,
+    "nama": "Nenden Herawati, S.Pd.",
+    "nip": "198207052014112003",
+    "foto": "/assets/personil/nenden.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Senyum seorang guru adalah semangat pertama yang diterima siswa.",
+    "sosmed": {}
+  },
+  {
+    "id": 31,
+    "nama": "Wulan Novita, S.Pd.",
+    "nip": "198211132014112003",
+    "foto": "/assets/personil/wulan.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Setiap november baru adalah kesempatan untuk tumbuh lebih baik.",
+    "sosmed": {}
+  },
+  {
+    "id": 32,
+    "nama": "Ati Suryati, S.Pd.",
+    "nip": "198605262019032015",
+    "foto": "/assets/personil/ati.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Matahari tak pernah lelah bersinar, begitu pula semangat mengajar.",
+    "sosmed": {}
+  },
+  {
+    "id": 33,
+    "nama": "Nurliyanti, S.Pd.",
+    "nip": "198706152019032000",
+    "foto": "/assets/personil/nurliyanti.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Cahaya ilmu tak akan redup selama guru terus menyulutnya.",
+    "sosmed": {}
+  },
+  {
+    "id": 34,
+    "nama": "Asep Saefuloh, S.Pd.",
+    "nip": "199107252019031018",
+    "foto": "/assets/personil/asep.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Generasi yang kuat lahir dari didikan yang penuh kasih dan ketegasan.",
+    "sosmed": {}
+  },
+  {
+    "id": 35,
+    "nama": "Leistar Adiguna, S.Sn.",
+    "nip": "199107262019031011",
+    "foto": "/assets/personil/leistar.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Seni mengajarkan kita melihat dunia dari sudut pandang yang berbeda.",
+    "sosmed": {}
+  },
+  {
+    "id": 36,
+    "nama": "Yeyen Nurazizah, S.Pd.",
+    "nip": "199209242019032023",
+    "foto": "/assets/personil/yeyen.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Azizah sejati adalah guru yang dicintai siswanya sepanjang masa.",
+    "sosmed": {}
+  },
+  {
+    "id": 37,
+    "nama": "Barli Mahardika Sandy, S.Pd.",
+    "nip": "199210062019031015",
+    "foto": "/assets/personil/barli.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Jiwa muda dalam mendidik adalah energi yang tak ternilai.",
+    "sosmed": {}
+  },
+  {
+    "id": 38,
+    "nama": "E Maria Ulfah, S.Pd.",
+    "nip": "199302052019032024",
+    "foto": "/assets/personil/e.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Ketulusan dalam mengajar meninggalkan jejak yang tak terhapus waktu.",
+    "sosmed": {}
+  },
+  {
+    "id": 39,
+    "nama": "Aam Amalia, S.Pd.I.",
+    "nip": "199307052019032015",
+    "foto": "/assets/personil/aam.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Amalan terbaik seorang guru adalah ilmu yang terus mengalir manfaatnya.",
+    "sosmed": {}
+  },
+  {
+    "id": 40,
+    "nama": "Dwi Nurul Husna, S.Ag.",
+    "nip": "199509302020122021",
+    "foto": "/assets/personil/dwi.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Dua cahaya yang menerangi: ilmu dunia dan cahaya akhirat.",
+    "sosmed": {}
+  },
+  {
+    "id": 41,
+    "nama": "Tatu Maftuha, S.Pd.",
+    "nip": "198604082020122000",
+    "foto": "/assets/personil/tatu.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Pintu ilmu selalu terbuka bagi mereka yang mau mengetuk.",
+    "sosmed": {}
+  },
+  {
+    "id": 42,
+    "nama": "Siti Maryam, S.Pd.I.",
+    "nip": "198610252019032005",
+    "foto": "/assets/personil/siti.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Teladan Maryam mengajarkan kita bahwa ketabahan adalah kekuatan.",
+    "sosmed": {}
+  },
+  {
+    "id": 43,
+    "nama": "Leni Ariany, S.Sos.",
+    "nip": "198812202019032007",
+    "foto": "/assets/personil/leni.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Kepedulian sosial adalah mata pelajaran yang diajarkan lewat keteladanan.",
+    "sosmed": {}
+  },
+  {
+    "id": 44,
+    "nama": "Aan Humaeni",
+    "nip": "197904162022211008",
+    "foto": "/assets/personil/aan.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Manusia terbaik adalah yang paling bermanfaat bagi sesama.",
+    "sosmed": {}
+  },
+  {
+    "id": 45,
+    "nama": "Kholisoh",
+    "nip": "197012082022212006",
+    "foto": "/assets/personil/kholisoh.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Keikhlasan tanpa pamrih adalah energi penggerak seorang pendidik sejati.",
+    "sosmed": {}
+  },
+  {
+    "id": 46,
+    "nama": "Mahrus",
+    "nip": "196707192022211001",
+    "foto": "/assets/personil/mahrus.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Pengabdian panjang adalah bukti cinta yang tak perlu kata-kata.",
+    "sosmed": {}
+  },
+  {
+    "id": 47,
+    "nama": "Omah Khusnul Khotimah",
+    "nip": "198011102022212019",
+    "foto": "/assets/personil/omah.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Akhir yang baik dimulai dari niat yang lurus sejak awal.",
+    "sosmed": {}
+  },
+  {
+    "id": 48,
+    "nama": "Arief Jazuli",
+    "nip": "198007152022211018",
+    "foto": "/assets/personil/arief.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Guru yang arif tahu kapan harus bicara dan kapan harus mendengar.",
+    "sosmed": {}
+  },
+  {
+    "id": 49,
+    "nama": "Arman, S.Pd.",
+    "nip": "198408092023211012",
+    "foto": "/assets/personil/arman.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Ketangguhan karakter lebih berharga dari sekadar nilai di atas kertas.",
+    "sosmed": {}
+  },
+  {
+    "id": 50,
+    "nama": "Devi Andriyansyah",
+    "nip": "198805192023211013",
+    "foto": "/assets/personil/devi.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Inovasi dalam mengajar adalah tanda cinta terhadap kemajuan siswa.",
+    "sosmed": {}
+  },
+  {
+    "id": 51,
+    "nama": "Fitri Handayani",
+    "nip": "199408052023212036",
+    "foto": "/assets/personil/fitri.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Semangat muda adalah api yang menerangi ruang kelas setiap hari.",
+    "sosmed": {}
+  },
+  {
+    "id": 52,
+    "nama": "Widi Nurhanah, S.Pd.",
+    "nip": "199311252023212041",
+    "foto": "/assets/personil/widi.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Guru muda membawa angin segar yang menyegarkan semangat belajar.",
+    "sosmed": {}
+  },
+  {
+    "id": 53,
+    "nama": "Sri Rohyati, S.Pd.",
+    "nip": "198602132025212039",
+    "foto": "/assets/personil/sri.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Rohmat ilmu yang ditanamkan hari ini akan berbuah di masa mendatang.",
+    "sosmed": {}
+  },
+  {
+    "id": 54,
+    "nama": "Umar Mu'tamar, S.Ag.",
+    "nip": "196903061998031004",
+    "foto": "/assets/personil/umar.png",
+    "jabatan": "Kepala Tata Usaha",
+    "kategori": "staf",
+    "quotes": "Administrasi yang rapi adalah cermin madrasah yang profesional.",
+    "sosmed": {}
+  },
+  {
+    "id": 55,
+    "nama": "Didin Rosyidin, S.E., M.A.P.",
+    "nip": "197608262005011000",
+    "foto": "/assets/personil/didin.png",
+    "jabatan": "Staf Tata Usaha",
+    "kategori": "staf",
+    "quotes": "Tata kelola yang baik adalah fondasi organisasi yang berkelanjutan.",
+    "sosmed": {}
+  },
+  {
+    "id": 56,
+    "nama": "Aris Nurdiansyah, S.Pd.",
+    "nip": "198608172025211019",
+    "foto": "/assets/personil/aris.png",
+    "jabatan": "Staf Tata Usaha",
+    "kategori": "staf",
+    "quotes": "Pelayanan terbaik dimulai dari sikap yang hangat dan tulus.",
+    "sosmed": {}
+  },
+  {
+    "id": 57,
+    "nama": "Ade Supaldi, S.Pd.",
+    "nip": "198612242025211016",
+    "foto": "/assets/personil/ade.png",
+    "jabatan": "Staf Tata Usaha",
+    "kategori": "staf",
+    "quotes": "Dedikasi tanpa sorotan adalah kemuliaan yang sesungguhnya.",
+    "sosmed": {}
+  },
+  {
+    "id": 58,
+    "nama": "Pupung Purnamasari, S.Pd.I.",
+    "nip": "199004102025212012",
+    "foto": "/assets/personil/pupung.png",
+    "jabatan": "Staf Tata Usaha",
+    "kategori": "staf",
+    "quotes": "Bunga yang mekar di tempat tersembunyi tetap mewangi dengan indah.",
+    "sosmed": {}
+  },
+  {
+    "id": 59,
+    "nama": "Yudi Wahyudi",
+    "nip": "198105092025211017",
+    "foto": "/assets/personil/yudi.png",
+    "jabatan": "Staf Tata Usaha",
+    "kategori": "staf",
+    "quotes": "Kerja keras tanpa publikasi adalah ibadah yang paling murni.",
+    "sosmed": {}
+  },
+  {
+    "id": 60,
+    "nama": "Bahtiar Efendi",
+    "nip": "198005062025211005",
+    "foto": "/assets/personil/bahtiar.png",
+    "jabatan": "Staf Tata Usaha",
+    "kategori": "staf",
+    "quotes": "Efisiensi dan efektivitas adalah dua sayap pelayanan prima.",
+    "sosmed": {}
+  },
+  {
+    "id": 61,
+    "nama": "Tubagus Mohamad Kholik",
+    "nip": "198808172025211024",
+    "foto": "/assets/personil/tubagus.png",
+    "jabatan": "Staf Tata Usaha",
+    "kategori": "staf",
+    "quotes": "Kesetiaan dalam tugas kecil adalah persiapan untuk amanah yang besar.",
+    "sosmed": {}
+  },
+  {
+    "id": 62,
+    "nama": "Suprana",
+    "nip": "197803032025211014",
+    "foto": "/assets/personil/suprana.png",
+    "jabatan": "Staf Tata Usaha",
+    "kategori": "staf",
+    "quotes": "Tanpa tim yang solid di balik layar, roda madrasah tak akan berputar.",
+    "sosmed": {}
+  },
+  {
+    "id": 63,
+    "nama": "Hambali",
+    "nip": "197101062025211016",
+    "foto": "/assets/personil/hambali.png",
+    "jabatan": "Staf Tata Usaha",
+    "kategori": "staf",
+    "quotes": "Pengabdian bertahun-tahun adalah persembahan terbaik untuk generasi.",
+    "sosmed": {}
+  },
+  {
+    "id": 64,
+    "nama": "Rafif Nugraha Muadz, S.Psi.",
+    "nip": "200011042025211015",
+    "foto": "/assets/personil/rafif.png",
+    "jabatan": "Staf Tata Usaha",
+    "kategori": "staf",
+    "quotes": "Memahami psikologi orang lain adalah kunci pelayanan yang berempati.",
+    "sosmed": {}
+  },
+  {
+    "id": 65,
+    "nama": "Ratu Syifa Luthfia Machar",
+    "nip": "199411102025212085",
+    "foto": "/assets/personil/ratu.png",
+    "jabatan": "Staf Tata Usaha",
+    "kategori": "staf",
+    "quotes": "Kesembuhan terbaik sebuah organisasi adalah tim yang saling mendukung.",
+    "sosmed": {}
+  },
+  {
+    "id": 66,
+    "nama": "Hasan Sumarna",
+    "nip": "199802162025211036",
+    "foto": "/assets/personil/hasan.png",
+    "jabatan": "Staf Tata Usaha",
+    "kategori": "staf",
+    "quotes": "Kebaikan yang dilakukan diam-diam adalah amal yang paling berharga.",
+    "sosmed": {}
+  },
+  {
+    "id": 67,
+    "nama": "Yahya Zulfikri",
+    "nip": "200001142025211016",
+    "foto": "/assets/personil/yahya.png",
+    "jabatan": "Staf Tata Usaha",
+    "kategori": "staf",
+    "quotes": "Generasi baru membawa perspektif segar yang menyegarkan institusi.",
+    "sosmed": {}
+  },
+  {
+    "id": 68,
+    "nama": "Aulia Rahmawati",
+    "nip": "000000000000000000",
+    "foto": "/assets/personil/aulia.png",
+    "jabatan": "Staf Tata Usaha",
+    "kategori": "staf",
+    "quotes": "Rahmat dalam bekerja adalah ketika pekerjaan terasa seperti panggilan.",
+    "sosmed": {}
+  }
+]

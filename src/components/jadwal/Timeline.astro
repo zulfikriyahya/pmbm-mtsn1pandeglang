@@ -1,0 +1,201 @@
+---
+import jadwalData from "@data/jadwal.json";
+
+interface Jadwal {
+  id: number;
+  jalur?: string;
+  fase: string;
+  kegiatan: string;
+  tanggal_mulai: string;
+  tanggal_akhir: string;
+  keterangan?: string;
+  status?: "selesai" | "berlangsung" | "upcoming";
+}
+
+function getStatus(mulai: string, akhir: string): "selesai" | "berlangsung" | "upcoming" {
+  const now = new Date(), start = new Date(mulai), end = new Date(akhir);
+  if (now > end)    return "selesai";
+  if (now >= start) return "berlangsung";
+  return "upcoming";
+}
+
+function fmtDate(d: string) {
+  return new Date(d).toLocaleDateString("id-ID", {
+    day: "numeric", month: "long", year: "numeric",
+  });
+}
+
+const data: Jadwal[] = (jadwalData as Jadwal[]).map((j) => ({
+  ...j,
+  status: j.status ?? getStatus(j.tanggal_mulai, j.tanggal_akhir),
+}));
+
+const cfg = {
+  selesai: {
+    label:       "Selesai",
+    badgeBg:     "rgba(155,175,196,0.08)",
+    badgeColor:  "#6F8EAC",
+    dotBg:       "#152D45",
+    dotBorder:   "rgba(155,175,196,0.15)",
+    cardBorder:  "rgba(155,175,196,0.08)",
+    cardShadow:  "0 2px 12px rgba(0,0,0,0.24)",
+  },
+  berlangsung: {
+    label:       "Sedang Berlangsung",
+    badgeBg:     "rgba(46,86,124,0.25)",
+    badgeColor:  "#9AAFC4",
+    dotBg:       "#2E567C",
+    dotBorder:   "rgba(155,175,196,0.30)",
+    cardBorder:  "rgba(155,175,196,0.22)",
+    cardShadow:  "0 4px 28px rgba(46,86,124,0.20)",
+  },
+  upcoming: {
+    label:       "Akan Datang",
+    badgeBg:     "rgba(155,175,196,0.05)",
+    badgeColor:  "rgba(155,175,196,0.35)",
+    dotBg:       "#0D1F30",
+    dotBorder:   "rgba(155,175,196,0.12)",
+    cardBorder:  "rgba(155,175,196,0.06)",
+    cardShadow:  "0 2px 10px rgba(0,0,0,0.20)",
+  },
+};
+---
+
+<section class="py-20" style="background:#07121C;">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-14">
+      <span class="eyebrow justify-center">Kalender PMBM</span>
+      <h2 class="section-title mt-3">Jadwal Pelaksanaan</h2>
+      <p class="section-sub">Jalur Reguler MTsN — Tahun Pelajaran 2026/2027</p>
+    </div>
+
+    <div class="relative" id="timeline">
+      <!-- centre line -->
+      <div
+        class="absolute left-1/2 -translate-x-px top-0 bottom-0 w-px hidden md:block"
+        style="background:linear-gradient(to bottom,transparent,rgba(155,175,196,0.12) 10%,rgba(155,175,196,0.12) 90%,transparent);"
+      ></div>
+
+      <div class="space-y-6">
+        {
+          data.map((item, i) => {
+            const s    = cfg[item.status ?? "upcoming"];
+            const left = i % 2 === 0;
+            return (
+              <div
+                class:list={[
+                  "relative flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-0 timeline-item",
+                  left ? "" : "md:flex-row-reverse",
+                ]}
+              >
+                <!-- card -->
+                <div
+                  class:list={[
+                    "w-full md:w-[46%] rounded-2xl p-5 transition-all duration-300",
+                    left ? "md:mr-auto" : "md:ml-auto",
+                  ]}
+                  style={`background:#0D1F30;border:1px solid ${s.cardBorder};box-shadow:${s.cardShadow};`}
+                >
+                  <!-- badges -->
+                  <div class="flex items-center gap-2 mb-3 flex-wrap">
+                    <span
+                      class="text-[11px] font-semibold px-2.5 py-1 rounded-full"
+                      style={`background:${s.badgeBg};color:${s.badgeColor};border:1px solid rgba(155,175,196,0.10);`}
+                    >
+                      {s.label}
+                    </span>
+                    {item.jalur && (
+                      <span
+                        class="text-[11px] px-2.5 py-1 rounded-full font-medium"
+                        style="background:rgba(245,166,35,0.08);color:#b8860b;border:1px solid rgba(245,166,35,0.15);"
+                      >
+                        {item.jalur}
+                      </span>
+                    )}
+                  </div>
+
+                  <h3 class="font-bold text-[15px] leading-snug" style="color:#E8EDF3;">
+                    {item.fase}
+                  </h3>
+                  <p class="text-sm mt-1 leading-relaxed" style="color:#6F8EAC;">
+                    {item.kegiatan}
+                  </p>
+
+                  <div
+                    class="h-px my-3"
+                    style="background:linear-gradient(to right,rgba(155,175,196,0.08),transparent);"
+                  />
+
+                  <p class="text-xs font-semibold" style="color:#9AAFC4;">
+                    {item.tanggal_mulai === item.tanggal_akhir
+                      ? fmtDate(item.tanggal_mulai)
+                      : `${fmtDate(item.tanggal_mulai)} – ${fmtDate(item.tanggal_akhir)}`}
+                  </p>
+                  {item.keterangan && (
+                    <p class="text-xs mt-1" style="color:rgba(155,175,196,0.35);">
+                      {item.keterangan}
+                    </p>
+                  )}
+                </div>
+
+                <!-- dot -->
+                <div
+                  class:list={[
+                    "relative z-10 w-8 h-8 rounded-full flex items-center justify-center text-white text-[11px] font-bold shadow flex-shrink-0",
+                    "md:absolute md:left-1/2 md:-translate-x-1/2",
+                  ]}
+                  style={`background:${s.dotBg};border:2px solid ${s.dotBorder};`}
+                >
+                  {item.id}
+                </div>
+
+                <div class="hidden md:block md:w-[46%]" />
+              </div>
+            );
+          })
+        }
+      </div>
+    </div>
+
+    <!-- actions -->
+    <div class="flex flex-col sm:flex-row gap-3 justify-center mt-12 no-print">
+      <button
+        onclick="window.print()"
+        class="inline-flex items-center justify-center gap-2 font-semibold rounded-full px-6 py-3 transition-all duration-300 text-sm"
+        style="border:1px solid rgba(155,175,196,0.18);color:#9AAFC4;"
+        onmouseover="this.style.background='rgba(155,175,196,0.08)';this.style.color='#E8EDF3';this.style.borderColor='rgba(155,175,196,0.35)';"
+        onmouseout="this.style.background='';this.style.color='#9AAFC4';this.style.borderColor='rgba(155,175,196,0.18)';"
+      >
+        Cetak / Simpan PDF
+      </button>
+      <a
+        href={`https://wa.me/?text=${encodeURIComponent("Jadwal PMBM MTsN 1 Pandeglang 2026/2027 — https://pmbm.mtsn1pandeglang.sch.id/jadwal")}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center gap-2 font-semibold rounded-full px-6 py-3 transition-all duration-300 text-sm"
+        style="border:1px solid rgba(155,175,196,0.18);color:#9AAFC4;"
+        onmouseover="this.style.background='rgba(155,175,196,0.08)';this.style.color='#E8EDF3';this.style.borderColor='rgba(155,175,196,0.35)';"
+        onmouseout="this.style.background='';this.style.color='#9AAFC4';this.style.borderColor='rgba(155,175,196,0.18)';"
+      >
+        Bagikan via WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+  gsap.registerPlugin(ScrollTrigger);
+
+  ScrollTrigger.create({
+    trigger: "#timeline",
+    start: "top 85%",
+    onEnter: () => {
+      gsap.from(".timeline-item", {
+        y: 28, opacity: 0, stagger: 0.1, duration: 0.55, ease: "power3.out",
+      });
+    },
+    once: true,
+  });
+</script>

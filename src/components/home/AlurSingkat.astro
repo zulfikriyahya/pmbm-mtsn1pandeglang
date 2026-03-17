@@ -1,0 +1,88 @@
+---
+const steps = [
+  { no: 1, icon: "📝", label: "Daftar Online", desc: "Isi formulir di pmbm-kanwilbanten.com" },
+  { no: 2, icon: "📁", label: "Upload Berkas", desc: "Lengkapi dokumen persyaratan yang diminta" },
+  { no: 3, icon: "✅", label: "Verifikasi", desc: "Berkas diverifikasi oleh panitia" },
+  { no: 4, icon: "🖥️", label: "Tes CAT & BTQ", desc: "Tes Computer Based & baca tulis Al-Qur'an" },
+  { no: 5, icon: "🎉", label: "Pengumuman", desc: "Cek hasil seleksi di website PMBM" },
+];
+---
+
+<section class="py-16" style="background:#07121C;">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-14">
+      <span class="eyebrow justify-center">Cara Mendaftar</span>
+      <h2 class="section-title mt-3">Alur Singkat Pendaftaran</h2>
+      <p class="section-sub">5 langkah mudah menuju MTsN 1 Pandeglang</p>
+    </div>
+
+    <div class="relative" id="alur-steps">
+      <!-- connector line -->
+      <div
+        class="hidden md:block absolute top-[2.2rem] left-[10%] right-[10%] h-px"
+        style="background:linear-gradient(to right,transparent,rgba(155,175,196,0.10) 20%,rgba(155,175,196,0.18) 50%,rgba(155,175,196,0.10) 80%,transparent);"
+      >
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-6">
+        {
+          steps.map((step) => (
+            <div class="flex flex-col items-center text-center alur-step">
+              <div
+                class="relative z-10 w-[4.5rem] h-[4.5rem] rounded-2xl flex items-center justify-center text-2xl mb-4"
+                style="background:linear-gradient(135deg,#1E3A57,#2E567C);box-shadow:0 4px 18px rgba(46,86,124,0.35);"
+              >
+                {step.icon}
+                <span
+                  class="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full text-white text-[10px] font-bold flex items-center justify-center shadow"
+                  style="background:#07121C;border:1px solid rgba(155,175,196,0.20);"
+                >
+                  {step.no}
+                </span>
+              </div>
+              <p class="font-bold text-sm mb-1" style="color:#E8EDF3;">
+                {step.label}
+              </p>
+              <p class="text-xs leading-relaxed" style="color:#6F8EAC;">
+                {step.desc}
+              </p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <a
+        href="/jadwal"
+        class="inline-flex items-center justify-center gap-2 font-semibold rounded-full px-6 py-3 transition-all duration-300"
+        style="border:1px solid rgba(155,175,196,0.18);color:#9AAFC4;"
+        onmouseover="this.style.background='rgba(155,175,196,0.08)';this.style.borderColor='rgba(155,175,196,0.35)';this.style.color='#E8EDF3';"
+        onmouseout="this.style.background='';this.style.borderColor='rgba(155,175,196,0.18)';this.style.color='#9AAFC4';"
+      >
+        Lihat Jadwal Lengkap →
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+  gsap.registerPlugin(ScrollTrigger);
+
+  ScrollTrigger.create({
+    trigger: "#alur-steps",
+    start: "top 85%",
+    onEnter: () => {
+      gsap.from(".alur-step", {
+        y: 28,
+        opacity: 0,
+        stagger: 0.1,
+        duration: 0.5,
+        ease: "power3.out",
+      });
+    },
+    once: true,
+  });
+</script>

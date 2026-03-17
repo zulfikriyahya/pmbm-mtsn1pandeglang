@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "jalur": "MTsN",
+    "fase": "Informasi dan Sosialisasi",
+    "kegiatan": "Sosialisasi PMBM Bersama ke sekolah dasar dan madrasah ibtidaiyah",
+    "tanggal_mulai": "2026-03-01",
+    "tanggal_akhir": "2026-04-17",
+    "keterangan": "Maret - April"
+  },
+  {
+    "id": 2,
+    "jalur": "MTsN",
+    "fase": "Pendaftaran Online",
+    "kegiatan": "Pendaftaran calon peserta didik baru via pmbm-kanwilbanten.com",
+    "tanggal_mulai": "2026-04-18",
+    "tanggal_akhir": "2026-04-27",
+    "keterangan": "Dibuka 18 April 2026 jam 08.00 WIB dan ditutup 27 April jam 16.00"
+  },
+  {
+    "id": 3,
+    "jalur": "MTsN",
+    "fase": "Verifikasi Dokumen",
+    "kegiatan": "Verifikasi dokumen pendaftaran oleh panitia",
+    "tanggal_mulai": "2026-04-19",
+    "tanggal_akhir": "2026-04-28",
+    "keterangan": "08.00 - 16.00 WIB"
+  },
+  {
+    "id": 4,
+    "jalur": "MTsN",
+    "fase": "Pengumuman Peserta CAT",
+    "kegiatan": "Pengumuman daftar peserta yang berhak mengikuti CAT",
+    "tanggal_mulai": "2026-04-29",
+    "tanggal_akhir": "2026-04-29",
+    "keterangan": "08.00 WIB"
+  },
+  {
+    "id": 5,
+    "jalur": "MTsN",
+    "fase": "Uji Coba CAT",
+    "kegiatan": "Uji coba sistem Computer Assisted Test (CAT)",
+    "tanggal_mulai": "2026-04-30",
+    "tanggal_akhir": "2026-04-30",
+    "keterangan": "07.30 - 16.00 WIB"
+  },
+  {
+    "id": 6,
+    "jalur": "MTsN",
+    "fase": "Pelaksanaan CAT",
+    "kegiatan": "Pelaksanaan tes seleksi akademik berbasis komputer (CAT)",
+    "tanggal_mulai": "2026-05-02",
+    "tanggal_akhir": "2026-05-02",
+    "keterangan": "07.30 - 16.00 WIB"
+  },
+  {
+    "id": 7,
+    "jalur": "MTsN",
+    "fase": "Tes Baca Tulis Al-Qur'an & Wawancara",
+    "kegiatan": "Tes baca tulis Al-Qur'an dan wawancara calon peserta didik",
+    "tanggal_mulai": "2026-05-02",
+    "tanggal_akhir": "2026-05-03",
+    "keterangan": "07.30 - 16.00 WIB"
+  },
+  {
+    "id": 8,
+    "jalur": "MTsN",
+    "fase": "Pengumuman Hasil Kelulusan",
+    "kegiatan": "Pengumuman hasil seleksi calon peserta didik baru jalur reguler MTsN",
+    "tanggal_mulai": "2026-05-05",
+    "tanggal_akhir": "2026-05-05",
+    "keterangan": "08.00 WIB — dapat dilihat di website dan papan pengumuman madrasah"
+  },
+  {
+    "id": 9,
+    "jalur": "MTsN",
+    "fase": "Lapor Diri dan Pemberkasan Manual",
+    "kegiatan": "Lapor diri dan pengumpulan berkas secara manual bagi peserta yang diterima",
+    "tanggal_mulai": "2026-05-06",
+    "tanggal_akhir": "2026-05-12",
+    "keterangan": "Dibuka 6 Mei jam 08.00 WIB dan ditutup 12 Mei jam 16.00 WIB"
+  }
+]

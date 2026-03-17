@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pmbm.mtsn1pandeglang.sch.id/sitemap-index.xml

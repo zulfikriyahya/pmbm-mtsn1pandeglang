@@ -1,0 +1,47 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Halaman Tidak Ditemukan" description="Halaman yang Anda cari tidak ditemukan.">
+  <section
+    class="min-h-screen flex items-center justify-center px-4"
+    style="background:linear-gradient(135deg,#030A11 0%,#07121C 50%,#0D1F30 100%);"
+  >
+    <div class="text-center text-white" id="notfound-content">
+      <p class="font-arabic text-3xl mb-8" style="color:rgba(155,175,196,0.55);">
+        إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُون
+      </p>
+      <h1
+        class="text-[120px] sm:text-[160px] font-bold leading-none select-none"
+        style="color:rgba(155,175,196,0.05);"
+      >
+        404
+      </h1>
+      <h2 class="text-2xl sm:text-3xl font-bold -mt-6 mb-3" style="color:#E8EDF3;">
+        Halaman Tidak Ditemukan
+      </h2>
+      <p
+        class="mb-10 max-w-sm mx-auto text-sm leading-relaxed"
+        style="color:rgba(155,175,196,0.40);"
+      >
+        Halaman yang Anda cari tidak tersedia atau telah dipindahkan.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/" class="btn-white font-bold px-7 py-3.5">← Kembali ke Beranda</a>
+        <a href="/faq" class="btn-outline-white px-7 py-3.5">Lihat FAQ</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  import { gsap } from "gsap";
+  gsap.from("#notfound-content > *", {
+    y: 24,
+    opacity: 0,
+    stagger: 0.09,
+    duration: 0.6,
+    ease: "power3.out",
+    delay: 0.1,
+  });
+</script>
