@@ -20,7 +20,7 @@ export const SITE = {
     ar: "مُتَدَيِّنٌ، مُتَفَوِّقٌ فِي الإِنْجَازِ، وَمُهْتَمٌّ بِالْبِيئَةِ",
   },
   motto: "Mandiri, Takwa, Peduli Lingkungan, Prestasi",
-  url: "https://pmbm.mtsn1pandeglang.sch.id",
+  url: "https://daftar.mtsn1pandeglang.sch.id",
   mainUrl: "https://mtsn1pandeglang.sch.id",
   registrationUrl: "https://pmbm-kanwilbanten.com/",
   youtubeId: "VIDEO_ID_HERE",
