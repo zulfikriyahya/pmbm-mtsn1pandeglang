@@ -2,8 +2,6 @@
 
 Website resmi Penerimaan Murid Baru Madrasah (PMBM) Bersama **Madrasah Tsanawiyah Negeri 1 Pandeglang** Tahun Pelajaran 2026/2027.
 
-🌐 **[pmbm.mtsn1pandeglang.sch.id](https://pmbm.mtsn1pandeglang.sch.id)**
-
 ---
 
 ## Screenshot
