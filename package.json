@@ -1,9 +1,9 @@
 {
-  "name": "pmbm-mtsn1-pandeglang",
+  "name": "pmbm-mtsn1pandeglang",
   "version": "1.0.0",
   "description": "Website PMBM Bersama Madrasah Tsanawiyah Negeri 1 Pandeglang",
   "author": "MTsN 1 Pandeglang",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": true,
   "type": "module",
   "scripts": {

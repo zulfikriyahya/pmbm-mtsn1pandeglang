@@ -152,7 +152,7 @@ export const SITE = {
 
 ## Lisensi
 
-**UNLICENSED** — Hak cipta dilindungi. Seluruh kode dan konten dalam repositori ini adalah milik **MTsN 1 Pandeglang**. Dilarang menyalin, mendistribusikan, atau menggunakan untuk keperluan komersial tanpa izin tertulis.
+**MIT** — Bebas digunakan, dimodifikasi, dan didistribusikan dengan tetap mencantumkan atribusi kepada MTsN 1 Pandeglang. Lihat file LICENSE untuk detail lengkap.
 
 ---
 
