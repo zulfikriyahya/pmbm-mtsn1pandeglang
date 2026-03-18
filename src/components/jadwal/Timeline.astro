@@ -157,29 +157,29 @@ const cfg = {
       </div>
     </div>
 
-    <!-- actions -->
-    <div class="flex flex-col sm:flex-row gap-3 justify-center mt-12 no-print">
-      <button
-        onclick="window.print()"
-        class="inline-flex items-center justify-center gap-2 font-semibold rounded-full px-6 py-3 transition-all duration-300 text-sm"
-        style="border:1px solid rgba(155,175,196,0.18);color:#9AAFC4;"
-        onmouseover="this.style.background='rgba(155,175,196,0.08)';this.style.color='#E8EDF3';this.style.borderColor='rgba(155,175,196,0.35)';"
-        onmouseout="this.style.background='';this.style.color='#9AAFC4';this.style.borderColor='rgba(155,175,196,0.18)';"
-      >
-        Cetak / Simpan PDF
-      </button>
-      <a
-        href={`https://wa.me/?text=${encodeURIComponent("Jadwal PMBM MTsN 1 Pandeglang 2026/2027 — https://pmbm.mtsn1pandeglang.sch.id/jadwal")}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center justify-center gap-2 font-semibold rounded-full px-6 py-3 transition-all duration-300 text-sm"
-        style="border:1px solid rgba(155,175,196,0.18);color:#9AAFC4;"
-        onmouseover="this.style.background='rgba(155,175,196,0.08)';this.style.color='#E8EDF3';this.style.borderColor='rgba(155,175,196,0.35)';"
-        onmouseout="this.style.background='';this.style.color='#9AAFC4';this.style.borderColor='rgba(155,175,196,0.18)';"
-      >
-        Bagikan via WhatsApp
-      </a>
-    </div>
+<!-- actions -->
+<div class="flex flex-col sm:flex-row gap-3 justify-center mt-12 no-print">
+  <button
+    onclick="window.open('http://s.id/pmbmbanten', '_blank')"
+    class="inline-flex items-center justify-center gap-2 font-semibold rounded-full px-6 py-3 transition-all duration-300 text-sm"
+    style="border:1px solid rgba(155,175,196,0.18);color:#9AAFC4;"
+    onmouseover="this.style.background='rgba(155,175,196,0.08)';this.style.color='#E8EDF3';this.style.borderColor='rgba(155,175,196,0.35)';"
+    onmouseout="this.style.background='';this.style.color='#9AAFC4';this.style.borderColor='rgba(155,175,196,0.18)';"
+  >
+    Cetak / Simpan PDF
+  </button>
+  <a
+    href={`https://wa.me/?text=${encodeURIComponent("Jadwal PMBM MTsN 1 Pandeglang 2026/2027 — https://daftar.mtsn1pandeglang.sch.id/jadwal")}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline-flex items-center justify-center gap-2 font-semibold rounded-full px-6 py-3 transition-all duration-300 text-sm"
+    style="border:1px solid rgba(155,175,196,0.18);color:#9AAFC4;"
+    onmouseover="this.style.background='rgba(155,175,196,0.08)';this.style.color='#E8EDF3';this.style.borderColor='rgba(155,175,196,0.35)';"
+    onmouseout="this.style.background='';this.style.color='#9AAFC4';this.style.borderColor='rgba(155,175,196,0.18)';"
+  >
+    Bagikan via WhatsApp
+  </a>
+</div>
   </div>
 </section>
 

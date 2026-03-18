@@ -521,6 +521,16 @@
   },
   {
     "id": 53,
+    "nama": "Arni Anggraini, S.Sos.",
+    "nip": "000000000000000000",
+    "foto": "/assets/personil/arni.png",
+    "jabatan": "Guru",
+    "kategori": "guru",
+    "quotes": "Guru muda membawa angin segar yang menyegarkan semangat belajar.",
+    "sosmed": {}
+  },
+  {
+    "id": 54,
     "nama": "Sri Rohyati, S.Pd.",
     "nip": "198602132025212039",
     "foto": "/assets/personil/sri.png",
@@ -530,7 +540,7 @@
     "sosmed": {}
   },
   {
-    "id": 54,
+    "id": 55,
     "nama": "Umar Mu'tamar, S.Ag.",
     "nip": "196903061998031004",
     "foto": "/assets/personil/umar.png",
@@ -540,7 +550,7 @@
     "sosmed": {}
   },
   {
-    "id": 55,
+    "id": 56,
     "nama": "Didin Rosyidin, S.E., M.A.P.",
     "nip": "197608262005011000",
     "foto": "/assets/personil/didin.png",
@@ -550,7 +560,7 @@
     "sosmed": {}
   },
   {
-    "id": 56,
+    "id": 57,
     "nama": "Aris Nurdiansyah, S.Pd.",
     "nip": "198608172025211019",
     "foto": "/assets/personil/aris.png",
@@ -560,7 +570,7 @@
     "sosmed": {}
   },
   {
-    "id": 57,
+    "id": 58,
     "nama": "Ade Supaldi, S.Pd.",
     "nip": "198612242025211016",
     "foto": "/assets/personil/ade.png",
@@ -570,7 +580,7 @@
     "sosmed": {}
   },
   {
-    "id": 58,
+    "id": 59,
     "nama": "Pupung Purnamasari, S.Pd.I.",
     "nip": "199004102025212012",
     "foto": "/assets/personil/pupung.png",
@@ -580,7 +590,7 @@
     "sosmed": {}
   },
   {
-    "id": 59,
+    "id": 60,
     "nama": "Yudi Wahyudi",
     "nip": "198105092025211017",
     "foto": "/assets/personil/yudi.png",
@@ -590,7 +600,7 @@
     "sosmed": {}
   },
   {
-    "id": 60,
+    "id": 61,
     "nama": "Bahtiar Efendi",
     "nip": "198005062025211005",
     "foto": "/assets/personil/bahtiar.png",
@@ -600,7 +610,7 @@
     "sosmed": {}
   },
   {
-    "id": 61,
+    "id": 62,
     "nama": "Tubagus Mohamad Kholik",
     "nip": "198808172025211024",
     "foto": "/assets/personil/tubagus.png",
@@ -610,7 +620,7 @@
     "sosmed": {}
   },
   {
-    "id": 62,
+    "id": 63,
     "nama": "Suprana",
     "nip": "197803032025211014",
     "foto": "/assets/personil/suprana.png",
@@ -620,7 +630,7 @@
     "sosmed": {}
   },
   {
-    "id": 63,
+    "id": 64,
     "nama": "Hambali",
     "nip": "197101062025211016",
     "foto": "/assets/personil/hambali.png",
@@ -630,7 +640,7 @@
     "sosmed": {}
   },
   {
-    "id": 64,
+    "id": 65,
     "nama": "Rafif Nugraha Muadz, S.Psi.",
     "nip": "200011042025211015",
     "foto": "/assets/personil/rafif.png",
@@ -640,7 +650,7 @@
     "sosmed": {}
   },
   {
-    "id": 65,
+    "id": 66,
     "nama": "Ratu Syifa Luthfia Machar",
     "nip": "199411102025212085",
     "foto": "/assets/personil/ratu.png",
@@ -650,7 +660,7 @@
     "sosmed": {}
   },
   {
-    "id": 66,
+    "id": 67,
     "nama": "Hasan Sumarna",
     "nip": "199802162025211036",
     "foto": "/assets/personil/hasan.png",
@@ -660,23 +670,23 @@
     "sosmed": {}
   },
   {
-    "id": 67,
+    "id": 68,
+    "nama": "Aulia Rahmawati, S.E.",
+    "nip": "000000000000000000",
+    "foto": "/assets/personil/aulia.png",
+    "jabatan": "Staf Tata Usaha",
+    "kategori": "staf",
+    "quotes": "Rahmat dalam bekerja adalah ketika pekerjaan terasa seperti panggilan.",
+    "sosmed": {}
+  },
+  {
+    "id": 69,
     "nama": "Yahya Zulfikri",
     "nip": "200001142025211016",
     "foto": "/assets/personil/yahya.png",
     "jabatan": "Staf Tata Usaha",
     "kategori": "staf",
     "quotes": "Generasi baru membawa perspektif segar yang menyegarkan institusi.",
-    "sosmed": {}
-  },
-  {
-    "id": 68,
-    "nama": "Aulia Rahmawati",
-    "nip": "000000000000000000",
-    "foto": "/assets/personil/aulia.png",
-    "jabatan": "Staf Tata Usaha",
-    "kategori": "staf",
-    "quotes": "Rahmat dalam bekerja adalah ketika pekerjaan terasa seperti panggilan.",
     "sosmed": {}
   }
 ]

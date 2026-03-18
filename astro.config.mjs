@@ -4,7 +4,7 @@ import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  site: "https://pmbm.mtsn1pandeglang.sch.id",
+  site: "https://daftar.mtsn1pandeglang.sch.id",
   integrations: [react(), tailwind({ applyBaseStyles: false }), sitemap()],
   output: "static",
   build: {

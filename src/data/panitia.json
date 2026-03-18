@@ -109,18 +109,6 @@
   },
   {
     "id": 10,
-    "nama": "Yahya Zulfikri",
-    "nip": "200001142025211016",
-    "foto": "/assets/personil/yahya.png",
-    "jabatan": "Anggota",
-    "kontak": {
-      "wa": "",
-      "email": ""
-    },
-    "deskripsi": "Membantu pelaksanaan seluruh kegiatan PMBM Bersama"
-  },
-  {
-    "id": 11,
     "nama": "Aris Nurdiansyah, S.Pd.",
     "nip": "198608172025211019",
     "foto": "/assets/personil/aris.png",
@@ -132,7 +120,7 @@
     "deskripsi": "Membantu pelaksanaan seluruh kegiatan PMBM Bersama"
   },
   {
-    "id": 12,
+    "id": 11,
     "nama": "Pupung Purnamasari, S.Pd.I.",
     "nip": "199004102025212012",
     "foto": "/assets/personil/pupung.png",
@@ -144,10 +132,22 @@
     "deskripsi": "Membantu pelaksanaan seluruh kegiatan PMBM Bersama"
   },
   {
-    "id": 13,
+    "id": 12,
     "nama": "Rafif Nugraha Muadz, S.Psi.",
     "nip": "200011042025211015",
     "foto": "/assets/personil/rafif.png",
+    "jabatan": "Anggota",
+    "kontak": {
+      "wa": "",
+      "email": ""
+    },
+    "deskripsi": "Membantu pelaksanaan seluruh kegiatan PMBM Bersama"
+  },
+  {
+    "id": 13,
+    "nama": "Yahya Zulfikri",
+    "nip": "200001142025211016",
+    "foto": "/assets/personil/yahya.png",
     "jabatan": "Anggota",
     "kontak": {
       "wa": "",
